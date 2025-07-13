@@ -17,7 +17,8 @@ client.on('ready', (c)=> {
 // random message if he is @ed and asked is this true
 client.on('messageCreate', (msg)=>{
     console.log(msg.content);
-    if (msg.content.toLowerCase().includes((botId+" is this true")) || msg.content.toLowerCase().includes((botId+" is this fake")) || msg.content.toLowerCase().includes((botId+" is this false"))){
+    if (msg.content.toLowerCase().includes((botId+" is this true")) || 
+    msg.content.toLowerCase().includes((botId+" is this fake")) || msg.content.toLowerCase().includes((botId+" is this false"))){
         msg.reply(questionprompts[Math.floor(Math.random()*questionprompts.length)]);
     }
     // More general whenever gork is @ed

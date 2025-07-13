@@ -70,7 +70,7 @@ module.exports.generalPrompt = [
     "Node.js v24.4.0"+
     "[nodemon] app crashed - waiting for file changes before starting...",
 
-    "Nate likes kids",
+    "<@663106262359080971> likes kids",
 
     "https://tenor.com/view/jarod_kintz-love-art-design-sex-gif-10614524",
 
@@ -171,5 +171,14 @@ module.exports.generalPrompt = [
     
     "https://tenor.com/view/omni-man-omni-man-are-you-sure-are-you-sure-invincible-gif-3935116808772397515",
 
-    
+    "Gork Before GTA6",
+
+    "Do not confuse me with my Saintly Twin Brother Grok",
+
+    "<@890678553304244264> is a twink",
+
+    "<@746772138731765820> thanks for life father :heart: :heart: :heart: :heart: :heart:",
+
+    "<@717051911668498532> HAHAHAHAHAHAHAHAHAHAHAHAHA DISABLED :index_pointing_at_the_viewer: :joy: :index_pointing_at_the_viewer: ",
+
 ];
