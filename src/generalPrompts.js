@@ -44,7 +44,7 @@ module.exports.generalPrompt = [
 
     "gork yourself",
 
-    "there are only two genders :sunglasses:",
+    "there are only two genders :sunglasses: thats right liberal start crying",
 
     "LEAVE YOURE KEYBOARD GO OUTSIDE AND START HUSTLING THE ALPHA COMMANDS IT",
 
@@ -180,5 +180,57 @@ module.exports.generalPrompt = [
     "<@746772138731765820> thanks for life father :heart: :heart: :heart: :heart: :heart:",
 
     "<@717051911668498532> HAHAHAHAHAHAHAHAHAHAHAHAHA DISABLED :index_pointing_at_the_viewer: :joy: :index_pointing_at_the_viewer: ",
+
+    "https://tenor.com/view/m%26m-green-m%26m-thank-you-gif-12192583355872142729",
+
+    "https://tenor.com/view/pizza-piza-rat-ratto-president-gif-11256782665071000438",
+
+    "hot https://tenor.com/view/yellow-amogus-singing-gif-5049958546468496340",
+
+    "Why do they call it oven when you of in the cold food of out hot eat the food",
+
+    "Anyone Remember the meme from awhile ago called like hwak tuah or smt liike that???",
+
+    "Shut yo yap 🗣❌",
+
+    "https://cdn.discordapp.com/attachments/877278879142772806/1330720415152345118/IMG_3017.png?ex=68750f36&is=6873bdb6&hm=f919ec4dcdf7b14302095045331f0527d94f1dcb25858c205295b5606a06b53d&",
+
+    "We should bring aparthied back not a joke :neutral_face: ",
+
+    "We should listen to this bright young man more https://youtube.com/shorts/BkZ3YCW2a7o?si=qjeXad9ZVvSbBGes",
+
+    "https://cdn.discordapp.com/attachments/877278879142772806/1306839734944796725/image0.png?ex=68753198&is=6873e018&hm=113bcb25615028916a0266f38ebcce4e82fe12b1adb2558f5f676f519873b06e&",
+
+    "SHES REAL https://cdn.discordapp.com/attachments/877278879142772806/1300282083960160297/image000000.png?ex=6875114e&is=6873bfce&hm=102aa39e866eba503cb3133553e15b3ee3dcb8e194c4b2ef5591b41d364d1884&",
+
+    "Finally A REAL YOUTUBER https://cdn.discordapp.com/attachments/1236371670277689386/1239020905087111178/image0-1.gif?ex=687500e3&is=6873af63&hm=b7a6224826f14cf83a6303b86c387b21a5f6133858f025958c042977bfaf538a&",
+
+    "https://cdn.discordapp.com/attachments/877278879142772806/1283955921747185715/image.png?ex=6874ffe2&is=6873ae62&hm=a70b8176cc70a32f243a919e7956d9c13363e0326718d3e4c68f67b7f800d91d& Bottom Text",
+
+    "https://tenor.com/view/jordan-peterson-gif-26139823 PREACH KING",
+
+    "https://youtu.be/O4KHM-Ibaq4?si=7Ri5V4u2m90tvnsf preach king?",
+
+    "https://cdn.discordapp.com/attachments/877278879142772806/1263731922345922591/VID_26141210_121156_193.mp4?ex=687540d1&is=6873ef51&hm=e224b38ced3870640d38bee934ec148779cd5a2f2efe5be8a20b336d7bc497ec&",
+
+    "https://youtu.be/FL5chECWyBA?si=lI-XHwqwOGtdMfnL :saluting_face: :saluting_face: :saluting_face: :eagle: :eagle: :eagle: ",
+
+    "https://cdn.discordapp.com/attachments/877278879142772806/1249134288721678346/idea.mp4?ex=68758a76&is=687438f6&hm=d93673cf6a7656ca97dcf1cfbd2666aeac6ef60987b86b477f3256ddbbb49845& WOAH GREAT IDEA",
+
+    "https://cdn.discordapp.com/attachments/877278879142772806/1230854355729649685/470F7106-D6F4-48B9-B07D-684BBC562613.jpg?ex=68759db2&is=68744c32&hm=101c88dd19a95fbd692ee9ed050c2215ddc03bb02748d8d0562892c62ab56b4a& NOOOOO NOT MY SHORT KING",
+
+    "https://tenor.com/view/zesty-gorilla-monkey-ape-ahh-gif-14189606010534406803",
+
+    "Among Us",
+
+    "Invest in Mongolian realestate",
+
+    "Silksong tomorrow",
+
+    "You got games on your phone?",
+
+    "hey man, tone down the soy a bit-alright?",
+
+    "GORRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRK"
 
 ];

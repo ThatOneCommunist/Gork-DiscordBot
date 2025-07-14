@@ -81,4 +81,10 @@ module.exports.questionprompts = [
 
     "https://i.kym-cdn.com/photos/images/newsfeed/002/931/631/d3b",
 
+    "这是真的",
+
+    "这不是真的",
+
+
+
 ]
