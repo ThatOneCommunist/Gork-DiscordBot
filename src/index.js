@@ -1,5 +1,6 @@
 const { generalPrompt } =  require('./generalPrompts.js');
 const { questionprompts } = require('./questionPrompts.js');
+const { specialPrompts } = require('./specialPrompts.js')
 const { Client, IntentsBitField, CommandInteraction } = require('discord.js');
 var botId = new String();
 var jaxcount = 1
@@ -21,7 +22,6 @@ const client = new Client({
 client.on('ready', (c)=> {
     console.log(c.user+' is gooning');
     botId = '<@1393814433473757255>'; // Easy way to check for if Gork is @ed
-    timing = 2147483646;
 });
 
 // random message if he is @ed and asked is this true
@@ -33,32 +33,32 @@ client.on('messageCreate', (msg)=>{
         (msg.content.toLowerCase().includes(botId+" is this fake")) || 
         (msg.content.toLowerCase().includes(botId+" is this false")) :
             msg.reply(questionprompts[Math.floor(Math.random()*questionprompts.length)]);
-            timing = 2147483646
-            break;
-        // Tyson Request TODO: ADD SPECIAL PROMPTS IN A SEPERATE FOLDER
-        case(msg.content.includes("WHAT DID I SACRIFICE")):
-            msg.reply("https://tenor.com/view/luthen-rael-luthen-rael-star-wars-andor-gif-5644261169390854326");
-            timing = 2147483646
             break;
         // GABE IS A FURRY
         case(msg.content.toLowerCase().includes("gabe is a furry")):
             msg.reply("ON MY MOMMA THATS TRUE");
-            timing = 2147483646
             break;
         // WORDLE BOT TODO: ADD A REGEX
         case(msg.content.includes(botId) && msg.content.toLowerCase().includes('wordle')):
             console.log(msg.content.replace(/^\d+$/, ''))
             Wordle(msg.content.replace(/^\d+$/, '').valueOf,msg)
             break;
-            
+        // Have @GORK above this case
         case(msg.content.includes(botId)):
             msg.reply(generalPrompt[Math.floor(Math.random()*generalPrompt.length)]);
-            timing = 2147483646
             break;
         // GORK MISPELL
         case(msg.content.includes("@hork") || msg.content.includes('@grok')):
             msg.reply("SAY MY NAME CORRECTLY")
             msg.react('😡')
+            break;
+        // Tyson Request TODO: ADD SPECIAL PROMPTS IN A SEPERATE FOLDER
+        case(msg.content.includes("WHAT DID I SACRIFICE")):
+            msg.reply(specialPrompts[0].luthen);
+            break;
+        // Kalkite response
+        case(msg.content.toLowerCase().includes("i love tyson")):
+            msg.reply(specialPrompts[0].Kalkite)
             break;
         // JAXSON SPAM TODO: ADD A YAML FILE OR SMT TO ADD MEMORY SO COUNT DOESNT RESET
         case(msg.author.id.includes('890678553304244264')):

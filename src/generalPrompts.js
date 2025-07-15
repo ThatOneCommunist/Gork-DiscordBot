@@ -255,6 +255,39 @@ module.exports.generalPrompt = [
 
     "Slurs",
 
-    "<@890678553304244264> what are you passionate about?"
+    "<@890678553304244264> what are you passionate about?",
+
+    "https://cdn.discordapp.com/attachments/1319845797713412159/1394489791877480518/Screenshot_20250714-033526_Reddit.png?ex=6876ff52&is=6875add2&hm=0814713e040b86e8fa6419aa47cb77af4db280b226501b29ae050d17f64afd96&",
+
+    "https://cdn.discordapp.com/attachments/1332374681772101703/1351426648603627603/Screenshot_20250318-002652_Reddit.png?ex=68768f65&is=68753de5&hm=3a566051ad8865b3a303f5ad71ac60c9624329f1ff10ae84ccf7a5dd637d89e7&",
+
+    "https://tenor.com/view/tunisia-arab-berber-amazigh-femboy-gif-2484008323391517285",
+
+    "https://tenor.com/view/please-keep-the-chat-in-bulgarian-bulgaria-bulgarian-gif-8046274049960957211",
+
+    "Peter is a true example of peak male performance https://cdn.discordapp.com/attachments/1332374681772101703/1350906427576946798/Screenshot_20250316-135922_rednote.png?ex=6876a526&is=687553a6&hm=49ae61f157726b9925487fc1d0d774ab784f36fe8ab49576e87fa491e97aab22&",
+
+    "It seems today that all you see"+
+    "Is violence in movies and sex on TV"+
+
+
+    "But where are those good old-fashioned values"+
+
+
+    "On which we used to rely?"+
+
+
+    "Lucky there's a family guy"+
+    "Lucky there's a man who"+
+    "Positively can do"+
+    "All the things that make us"+
+
+
+    "Laugh and cry"+
+
+
+    "He's a family guy",
+
+    "It's crazy how Sony Pictures Animation hasn't released a good movie since the Emoji Movie"
 
 ];
