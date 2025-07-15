@@ -267,20 +267,20 @@ module.exports.generalPrompt = [
 
     "Peter is a true example of peak male performance https://cdn.discordapp.com/attachments/1332374681772101703/1350906427576946798/Screenshot_20250316-135922_rednote.png?ex=6876a526&is=687553a6&hm=49ae61f157726b9925487fc1d0d774ab784f36fe8ab49576e87fa491e97aab22&",
 
-    "It seems today that all you see"+
-    "Is violence in movies and sex on TV"+
+    "It seems today that all you see\n"+
+    "Is violence in movies and sex on TV\n\n\n"+
 
 
-    "But where are those good old-fashioned values"+
+    "But where are those good old-fashioned values\n\n\n"+
 
 
-    "On which we used to rely?"+
+    "On which we used to rely?\n\n\n"+
 
 
-    "Lucky there's a family guy"+
-    "Lucky there's a man who"+
-    "Positively can do"+
-    "All the things that make us"+
+    "Lucky there's a family guy\n"+
+    "Lucky there's a man who\n"+
+    "Positively can do\n"+
+    "All the things that make us\n"+
 
 
     "Laugh and cry"+
@@ -292,6 +292,16 @@ module.exports.generalPrompt = [
 
     "<@683070525710532608> This you? https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.imgflip.com%2F4okt30.jpg&f=1&nofb=1&ipt=2c4494e6454e5f62caab74af02c2501f346e0d300d61357f4dcf01c5849957b1",
 
-    "I be spitting facts fr :speaking_head: :100: :100::100::100::100::100::100::100:"
+    "I be spitting facts fr :speaking_head: :100: :100::100::100::100::100::100::100:",
+
+    "I'm a big fan of Japanese vocoloids",
+
+    "I love <@706997479819837452>",
+
+    "That reminds me of the time I was on the grassy knoll on November 22, 1963, at approximately 12:30",
+
+    "I sacrificed so much to be here so whatever you have to say has to be worth my precious gorking time",
+
+    "what was that one vegtable from veggietales again:thinking: :thinking: "
 
 ];

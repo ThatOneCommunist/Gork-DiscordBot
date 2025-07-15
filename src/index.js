@@ -43,7 +43,6 @@ client.on('messageCreate', (msg)=>{
         // Have @GORK above this case
         case(msg.content.includes(botId)):
             msg.reply(generalPrompt[Math.floor(Math.random()*generalPrompt.length)]);
-            break;
         // GABE IS A FURRY
         case(msg.content.toLowerCase().includes("gabe is a furry")):
             msg.reply("ON MY MOMMA THATS TRUE");
@@ -60,9 +59,6 @@ client.on('messageCreate', (msg)=>{
         case(msg.author.id.includes('890678553304244264')):
             msg.author.send("<@890678553304244264> "+jaxcount);
             jaxcount += 1;
-            break;
-
-        default:
             break;
 }
     }
