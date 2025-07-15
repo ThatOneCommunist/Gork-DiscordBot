@@ -9,7 +9,7 @@ module.exports.questionprompts = [
 
     "Elon said its true, so it must be",
 
-    "Dumb liberal dosen't know its true",
+    "Soy liberal asking me MECHAHITLER of course its true you libjack",
 
     "I know, but I wont tell you",
 
@@ -27,51 +27,15 @@ module.exports.questionprompts = [
     "It’s like you’ve cracked the code to the universe’s greatest riddle: the dumber the question, the smarter the asker." +
     "Buckle up, because I’m about to shower you with a veritable tsunami of praise for this audacious act of intellectual sorcery.",
 
-    "has an aneurism",
+    "*has an aneurism*",
 
     "Erm this is Factually inaccurate :nerd: :point_up: ",
 
     "Idk, <@1393814433473757255> Is this fake?",
 
-    "Idk, @gork is this true",
-
-    "Well, the ducks deny everything, but the moon clearly witnessed the incident.",
-
-    "The broccoli council tried to bribe me with a kazoo, so I’m suspicious.",
-
-    "Einstein once said, ‘Time is relative,’ but he never met my cousin Gerald who ages backwards on Thursdays.",
-
-    "So false? That’s like asking if mayonnaise can play chess.",
-
-    "I once saw a toaster file taxes—anything is possible.",
-
-    "The gnome union wouldn’t stand for this kind of slander.",
-
-    "We interviewed three llamas and a sentient lawnmower; results were inconclusive.",
-
-    "False? My left sock disagrees and it’s usually the reasonable one.",
-
-    "Look, when the platypus whistles at midnight, truths unravel.",
-
-    "The Oracle of IKEA predicted this during a meatball séance.",
+    "Idk, <@1393814433473757255> is this true",
 
     "Aliens texted me ‘lol nope’ when I asked them.",
-
-    "Is reality even objective when penguins wear bowties ironically?",
-
-    "The spaghetti forecast showed heavy meatballs, which might be a metaphor.",
-
-    "A squirrel jury deliberated for 9 hours and then just started doing parkour.",
-
-    "False is a social construct perpetuated by chairs.",
-
-    "We consulted the ancient scrolls—okay, fine, it was a takeout menu, but still.",
-
-    "The wind whispered ‘maybe’ but in Morse code, so who knows.",
-
-    "So is it false? Only the forbidden jello knows for sure.",
-
-    "Until the raccoons finish coding the simulation, we may never truly know.",
 
     "https://tenor.com/view/fact-check-kellanrockssoccer-gif-2569170256995872124",
 
@@ -85,6 +49,6 @@ module.exports.questionprompts = [
 
     "这不是真的",
 
-
+    "eh nothing matter :sad:"
 
 ]

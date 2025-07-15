@@ -239,6 +239,22 @@ module.exports.generalPrompt = [
     " you hear this signal bodeboop. A sing lap should be completed every time you hear this sound." +
     " ding Remember to run in a straight line and run as long as possible. The second time you fail to" +
     " complete a lap before the sound, your test is over. The test will begin on the word start. On your mark." +
-    " Get ready!… Start. ding﻿"
+    " Get ready!… Start. ding﻿",
+
+    "https://cdn.discordapp.com/attachments/1327803024344616972/1394370437525278821/Screenshot_20250714-123014_Aliucord.png?ex=6876902a&is=68753eaa&hm=4a3d70b4c16d652ed7a28c7e9cbca0b39270d054fc9251346aadd3d8606a8e4d&",
+
+    "Teachers make too much money.",
+
+    "Just Killed 3 por people.",
+
+    "You know we may all have our disagreements but at the end of the day, it is night and thats all we have that connects us.",
+
+    "We should start a government agency that just burgles people and use that money to fund Israel because they need it :pray:.",
+
+    "Shut up Cracker",
+
+    "Slurs",
+
+    "<@890678553304244264> what are you passionate about?"
 
 ];
