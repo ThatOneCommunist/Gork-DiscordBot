@@ -288,6 +288,10 @@ module.exports.generalPrompt = [
 
     "He's a family guy",
 
-    "It's crazy how Sony Pictures Animation hasn't released a good movie since the Emoji Movie"
+    "It's crazy how Sony Pictures Animation hasn't released a good movie since the Emoji Movie",
+
+    "<@683070525710532608> This you? https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.imgflip.com%2F4okt30.jpg&f=1&nofb=1&ipt=2c4494e6454e5f62caab74af02c2501f346e0d300d61357f4dcf01c5849957b1",
+
+    "I be spitting facts fr :speaking_head: :100: :100::100::100::100::100::100::100:"
 
 ];

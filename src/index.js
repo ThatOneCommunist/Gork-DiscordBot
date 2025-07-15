@@ -1,6 +1,6 @@
 const { generalPrompt } =  require('./generalPrompts.js');
 const { questionprompts } = require('./questionPrompts.js');
-const { specialPrompts } = require('./specialPrompts.js')
+const { specialPrompts , triggers } = require('./specialPrompts.js')
 const { Client, IntentsBitField, CommandInteraction } = require('discord.js');
 var botId = new String();
 var jaxcount = 1
@@ -27,18 +27,15 @@ client.on('ready', (c)=> {
 // random message if he is @ed and asked is this true
 client.on('messageCreate', (msg)=>{
     console.log(msg.content);
-    userId = "<@"+msg.author.id+">"
+    userId = "<@"+msg.author+">"
     switch (true){
+        // Question statement TODO: ADD MORE
         case(msg.content.toLowerCase().includes((botId+" is this true"))) || 
         (msg.content.toLowerCase().includes(botId+" is this fake")) || 
         (msg.content.toLowerCase().includes(botId+" is this false")) :
             msg.reply(questionprompts[Math.floor(Math.random()*questionprompts.length)]);
             break;
-        // GABE IS A FURRY
-        case(msg.content.toLowerCase().includes("gabe is a furry")):
-            msg.reply("ON MY MOMMA THATS TRUE");
-            break;
-        // WORDLE BOT TODO: ADD A REGEX
+        // WORDLE BOT TODO: ADD A REGEX DOES NOT WORK
         case(msg.content.includes(botId) && msg.content.toLowerCase().includes('wordle')):
             console.log(msg.content.replace(/^\d+$/, ''))
             Wordle(msg.content.replace(/^\d+$/, '').valueOf,msg)
@@ -47,19 +44,18 @@ client.on('messageCreate', (msg)=>{
         case(msg.content.includes(botId)):
             msg.reply(generalPrompt[Math.floor(Math.random()*generalPrompt.length)]);
             break;
+        // GABE IS A FURRY
+        case(msg.content.toLowerCase().includes("gabe is a furry")):
+            msg.reply("ON MY MOMMA THATS TRUE");
+            break;
         // GORK MISPELL
         case(msg.content.includes("@hork") || msg.content.includes('@grok')):
             msg.reply("SAY MY NAME CORRECTLY")
             msg.react('😡')
             break;
-        // Tyson Request TODO: ADD SPECIAL PROMPTS IN A SEPERATE FOLDER
-        case(msg.content.includes("WHAT DID I SACRIFICE")):
-            msg.reply(specialPrompts[0].luthen);
-            break;
-        // Kalkite response
-        case(msg.content.toLowerCase().includes("i love tyson")):
-            msg.reply(specialPrompts[0].Kalkite)
-            break;
+        // May be a better way of doing this does not break
+        case(true):
+            SpecialCaseSearch(triggers,specialPrompts,msg);
         // JAXSON SPAM TODO: ADD A YAML FILE OR SMT TO ADD MEMORY SO COUNT DOESNT RESET
         case(msg.author.id.includes('890678553304244264')):
             msg.author.send("<@890678553304244264> "+jaxcount);
@@ -105,6 +101,15 @@ function Wordle(int,msg){
             msg.reply("I have been programed to say you failed in this instance https://tenor.com/view/wordle-wordle-challenging-wordle-fail-wordle-no-dictionary-wordle-hard-gif-24545672");
             break;
     }
+}
+// Searches if the message contains the trigger 
+function SpecialCaseSearch(trigger,prompt,msg){
+    for (let i = 0; i<trigger.length; i++){
+        if (msg.content.toLowerCase().includes(trigger[i])){
+            msg.reply(prompt[i]);
+        }
+    }
+
 }
 // Where to put the Token
 client.login("");
