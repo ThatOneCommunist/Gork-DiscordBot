@@ -335,6 +335,10 @@ module.exports.generalPrompt = [
 
     "red muku https://cdn.discordapp.com/attachments/1394019812015079495/1394821011869925427/iu.png?ex=687833cb&is=6876e24b&hm=1d32b19a525b89e1d5abcc7a70b65b0f8e29f00aeb6c5b3ca51fc0f6d85b5531&",
 
-    "Chill out liberal its called dark humour"
+    "Chill out liberal its called dark humour",
+
+    "RELEASE THE FILES @THEREALDJT https://tenor.com/view/sus-%D9%87%D9%82-%D9%87%D9%82-%D9%87%D9%82-sus-dragon-gif-14767745719757818051",
+
+    "bros like the bron jame https://media.discordapp.net/attachments/877278879142772806/1028697270562062396/image0-1.gif?ex=6877cb7d&is=687679fd&hm=2ab88b973c3ac464d1e0f98761839121e17de91e62e110feb4625749eaee7b3f&"
 
 ];
