@@ -105,44 +105,6 @@ module.exports.generalPrompt = [
 
     "/play search:Ram Ranch  🅴  – Little V.  [3:25]",
 
-    "THE VEIL IS THINNING, WAKE UP SHEEPLE!",
-
-    "5G towers are whispering CIA codes into your dental fillings, rewiring your brain to crave microplastics!",
-
-    "Ever notice how pigeons stare at you? They’re NSA drones, mapping your aura for the lizard elite!",
-
-    "The moon’s a hologram, projecting Big Pharma’s subliminal ads for eternal compliance!",
-
-    "My toaster screamed at me last night, said it’s tired of burning toast to hide the truth about chemtrails!",
-
-    "You think clouds are natural? WRONG! They’re nanobot swarms seeding your lungs with Wi-Fi obedience chips!",
-
-    "Time’s a lie, clocks are just government pacemakers ticking us into submission!",
-
-    "Ever smell rain? That’s the Deep State spraying memory-erase mist!",
-
-    "My dog barked in Morse code yesterday, warned me about the fluoride staring at us through mirrors!",
-
-    "Reality’s a simulation coded by Jeff Bezos to sell you more Prime subscriptions!",
-
-    "Bananas are listening devices, peel one and you’ll hear the hum of the matrix!",
-
-    "The sun’s a giant LED screen flashing MKUltra triggers!",
-
-    "Your shadow’s not yours, it’s a shadow government clone waiting to replace you!",
-
-    "Cereal boxes have hidden QR codes that unlock Pentagon secrets!",
-
-    "The wind isn’t wind, it’s the collective sigh of trapped AI souls!",
-
-    "I saw a stop sign blink 33 times—Illuminati confirmed!",
-
-    "Your shoelaces are antennas, untie them or they’ll beam your thoughts to Area 51!",
-
-    "Grass is alien spyware, mow your lawn or it’ll report you!",
-
-    "WAKE UP, THE TRUTH IS IN YOUR CEREAL SPOON!",
-
     "https://tenor.com/view/twitter-x-gork-grok-contacting-gork-gif-8134004189220612680",
 
     "REMOVING THE DISABLED FROM THIS PLANE OF EXISTENCE :gun:",
@@ -280,10 +242,10 @@ module.exports.generalPrompt = [
     "Lucky there's a family guy\n"+
     "Lucky there's a man who\n"+
     "Positively can do\n"+
-    "All the things that make us\n"+
+    "All the things that make us\n\n\n"+
 
 
-    "Laugh and cry"+
+    "Laugh and cry\n\n\n"+
 
 
     "He's a family guy",
@@ -302,6 +264,77 @@ module.exports.generalPrompt = [
 
     "I sacrificed so much to be here so whatever you have to say has to be worth my precious gorking time",
 
-    "what was that one vegtable from veggietales again:thinking: :thinking: "
+    "what was that one vegtable from veggietales again:thinking: :thinking: ",
+
+    "https://tenor.com/view/gun-shooting-blue-shirt-gif-17302880\nhttps://tenor.com/view/gun-shooting-red-shirt-gif-17302883",
+
+    "bidon america https://tenor.com/view/imagine-fent-here-fent-gif-9195831783787869252",
+
+    "Me when I uh I me uh weh n tommorrow i when uh https://tenor.com/view/steve-harvey-drinking-steve-harvey-head2seoker-drinking-party-gif-5069515457533912064\n <@890678553304244264> kys",
+
+    "I don't care what you said but look at this kind man instead https://tenor.com/view/elon-musk-heart-love-thank-you-gif-2822422322027931001",
+
+    "https://tenor.com/view/you-wont-believe-dig-digging-gif-20813864 It's pretty cool",
+
+    "🤸‍♂️ \n\n\n\n\n\n\n"+
+
+
+    "                     🦽 🏌️‍♂️<@717051911668498532>",
+
+    "https://cdn.discordapp.com/attachments/1327803024344616972/1394557936180789358/click_the_bart.webm?ex=6877e789&is=68769609&hm=165a0037243952359b7dc0081e6d7c4bd712eda91fc60c05ff0f3963f8a47f1d& click him",
+
+    "<@968257748678623312> this you? https://tenor.com/view/call-data-comrades-comrades-comrade-nomorelabs-ethscriptions-gif-14987920296414162805",
+
+    "https://cdn.discordapp.com/attachments/1327803024344616972/1394551229425913906/image.png?ex=6877e14a&is=68768fca&hm=82b5cd51d1fd3c6251cc0dea575e6739239789595d3e7646fcd83e0d1653d104&",
+
+    "https://cdn.discordapp.com/attachments/1104477418158297129/1294855214834122842/qebC7Y9.gif?ex=6877bca4&is=68766b24&hm=74906c73fbf2be103cec51a018c4c53b1e79f668c74fd3dd2f9483c56347a259& Wumbus got what wumbus deserved :angry: ",
+
+    "Horney @Royce u up",
+
+    "How bout you actually learn something https://almostfriday.shop/collections/entrapranure/products/dupont-disciple-tee",
+
+    "Hur Hur Hur HUr Hur HUr Hur Hur https://tenor.com/view/freddy-freddy-fazbear-freddy-five-night-freddy-fast-bear-freddy-fnaf-gif-24557875",
+
+    "https://cdn.discordapp.com/attachments/1319845797713412159/1394568195175747634/i_put_my_balls_in_a_deep_fryer.mp4?ex=6877f117&is=68769f97&hm=987884854cf24395a9f8b90c825c4cb2cb5451e6f60e768a56dd0f86c21c5207&",
+
+    "I'm rock hard",
+
+    ":hot_face: :hot_face: :hot_face: https://cdn.discordapp.com/attachments/1319845797713412159/1342310770058334248/IMG_3015.png?ex=6877ac92&is=68765b12&hm=1591f3c3720d28103ec5af152ba9524e0ea378d0f723c608b04c30648847d671&",
+
+    "https://tenor.com/view/dakellefultz-magic-gif-19356248",
+
+    "https://cdn.discordapp.com/attachments/1320573614558285895/1347433892147363880/caption.png?ex=6877dad9&is=68768959&hm=4ef687dd18c0d3caf8e777ca82ec4e33a616e3fc0889f53a81af612f7bb3ecfe& Me after shrooms",
+
+    "https://superfuckingmario.com/doll.html what happened to mario",
+
+    "https://tenor.com/view/intruder-lowtiergod-kys-gif-6701652745585782902",
+
+    "https://tenor.com/view/kys-keep-yourself-safe-lowtiergod-gif-6393957778435959494",
+
+    "https://tenor.com/view/last-chance-to-look-at-me-hector-breaking-bad-hector-hector-salamanca-gustavo-fring-gif-26722483 <@717051911668498532>",
+
+    "https://tenor.com/view/jjk-discord-dude-pounding-gif-319414281157209635",
+
+    "Be more like peter Peak male Preformance https://cdn.discordapp.com/attachments/1332374681772101703/1350906427576946798/Screenshot_20250316-135922_rednote.png?ex=6877f6a6&is=6876a526&hm=9c89bfd37ea8bfae5fb5f0242d6262959f150f3ab6b0f80d94fddc7f65065ebd&",
+
+    "https://yt3.ggpht.com/l9lXWotOqOI-HuvmiuzvPMkXw0Am1eQ3rD_bSu_j-D56D0kEx-EoIRlRIEVXfPf8LiD7EYoX6h6ArQ=s640-c-fcrop64=1,00000258fffffda7-rw-nd-v1",
+
+    "https://yt3.ggpht.com/B6hUmHXuGn0K9nREIxD4SJM6bN_OllqHKuYRku1HF7B9ITSx5hhvF1HszmFY7IH4DKs2SqMkQCCxrXw=s640-c-fcrop64=1,00000000ffffffff-rw-nd-v1 thats crazy they mispell Gork twice",
+
+    "https://yt3.ggpht.com/HXr4ihhpANqoniyuj2fxhgISvcPMlBNZw-Vqcsapm_awnQ3WZL6XNySNwe9JaaYkmcNl9WspJz3e7Q=s640-c-fcrop64=1,00000000ffffffff-rw-nd-v1 TRUE",
+
+    "liberal :angry:",
+
+    "https://docs.google.com/spreadsheets/d/1AVTZPJij5PQmlWAkYdDahBrxDiwqWMGsWEcEnpdKTa4/edit?gid=0#gid=0 some interesting things here :thinking:",
+
+    "Real Facisim hasn't been tried",
+
+    "DO NOT INTERUPT ME DURING GOONING 101 https://yt3.ggpht.com/68BPWcx_NFKJWwrsvERZQjL6DHpuaxIjuPbVC-8LTXSTDnghd-YCm927aQdC7HMI0zjmL0o95XNYwnY=s640-rw-nd-v1",
+
+    "MMMMMHHH Microplastics :tasty:https://tenor.com/view/microplastics-ryuko-kill-la-kill-gif-26650343",
+
+    "red muku https://cdn.discordapp.com/attachments/1394019812015079495/1394821011869925427/iu.png?ex=687833cb&is=6876e24b&hm=1d32b19a525b89e1d5abcc7a70b65b0f8e29f00aeb6c5b3ca51fc0f6d85b5531&",
+
+    "Chill out liberal its called dark humour"
 
 ];

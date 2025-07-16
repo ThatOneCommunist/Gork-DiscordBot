@@ -25,7 +25,8 @@ module.exports.specialPrompts = [{
             "⬜⬜⬜⬛⬛⬛⬛⬜⬜⬜⬜⬛⬛⬛⬛⬛⬛⬜⬜⬜⬜⬛⬛⬛⬛⬜⬜⬜",
             "⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬛⬜⬜⬛⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜"],
     Treager:"Hey I know a funny man named larry https://www.youtube.com/watch?v=qRrD_SiHRYM",
-    JFK:"Wasn't that the guy they shot for plot reasons https://www.youtube.com/watch?v=v2DxBsWk3w8"
+    JFK:"Wasn't that the guy they shot for plot reasons https://www.youtube.com/watch?v=v2DxBsWk3w8",
+    Massive:"you know what else is massive https://tenor.com/view/ninja-fortnite-reaction-ninja-low-taper-fade-gif-1784137995500051652"
 }]
 
 module.exports.triggers = [{
@@ -33,5 +34,6 @@ module.exports.triggers = [{
     Kalkite:"i love tyson",
     Miku:"miku",
     Treager:"larry",
-    JFK:"jfk"
+    JFK:"jfk",
+    Massive:"massive"
 }]

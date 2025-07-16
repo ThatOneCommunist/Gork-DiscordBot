@@ -49,6 +49,8 @@ module.exports.questionprompts = [
 
     "这不是真的",
 
-    "eh nothing matter :sad:"
+    "eh nothing matter :sad:",
+
+    "Whatever <@968257748678623312> says is right"
 
 ]
