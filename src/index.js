@@ -1,7 +1,8 @@
+const { User } = require('discord.js');
 const { generalPrompt } =  require('./generalPrompts.js');
 const { questionprompts } = require('./questionPrompts.js');
 const { specialPrompts , triggers } = require('./specialPrompts.js')
-const { Client, IntentsBitField, CommandInteraction } = require('discord.js');
+const { Client, IntentsBitField, CommandInteraction, userMention } = require('discord.js');
 var botId = new String();
 var jaxcount = 1
 var userId = new String();
@@ -20,7 +21,7 @@ const client = new Client({
         
 ]});
 client.on('ready', (c)=> {
-    console.log(c.user+' is gooning');
+    console.log(c.user.displayName+' is gooning');
     botId = '<@1393814433473757255>'; // Easy way to check for if Gork is @ed
 });
 
@@ -43,6 +44,7 @@ client.on('messageCreate', (msg)=>{
         // Have @GORK above this case
         case(msg.content.includes(botId)):
             msg.reply(generalPrompt[Math.floor(Math.random()*generalPrompt.length)]);
+            break;
         // GABE IS A FURRY
         case(msg.content.toLowerCase().includes("gabe is a furry")):
             msg.reply("ON MY MOMMA THATS TRUE");
@@ -52,14 +54,13 @@ client.on('messageCreate', (msg)=>{
             msg.reply("SAY MY NAME CORRECTLY")
             msg.react('😡')
             break;
-        // May be a better way of doing this does not break
-        case(true):
-            SpecialCaseSearch(triggers,specialPrompts,msg);
         // JAXSON SPAM TODO: ADD A YAML FILE OR SMT TO ADD MEMORY SO COUNT DOESNT RESET
         case(msg.author.id.includes('890678553304244264')):
             msg.author.send("<@890678553304244264> "+jaxcount);
             jaxcount += 1;
             break;
+        default:
+            SpecialCaseSearch(triggers,specialPrompts,msg);
 }
     }
 );
