@@ -38,8 +38,8 @@ client.on('messageCreate', (msg)=>{
             break;
         // WORDLE BOT TODO: ADD A REGEX DOES NOT WORK
         case(msg.content.includes(botId) && msg.content.toLowerCase().includes('wordle')):
-            console.log(msg.content.replace(/^\d+$/, ''))
-            Wordle(msg.content.replace(/^\d+$/, '').valueOf,msg)
+            let wordInt = msg.content.replace(/[^1-6]/gis ,"");// Removes anything thats not a number
+            Wordle(wordInt.replace('13314433435255',''),msg);// Removes Gorks ID
             break;
         // Have @GORK above this case
         case(msg.content.includes(botId)):
@@ -76,23 +76,23 @@ client.on('messageReactionAdd', (react)=>{
 
 function Wordle(int,msg){
     switch (int){
-        case 1:
+        case '1':
             msg.reply(userId+" cheated")
             break;
-        case 2:
+        case '2':
             msg.reply(userId+" Thats How we do https://tenor.com/view/wordle-wordle-win-wordle-in2-wordle-in-two-wordle-easy-gif-24546309")
             break;
-        case 3:
+        case '3':
             msg.reply("Don't Hate on"+userId+"https://tenor.com/view/wordle-wordle-in3-wordle-in-three-worlde-easy-wordle-win-gif-24560879")
             break;
-        case 4:
-            msg.reply("https://tenor.com/view/wordle-wordle-in-four-wordle-in4-wordle-win-gif-24571752")
+        case '4':
+            msg.reply("here "+userId+"ROAR :wolf: https://tenor.com/view/wordle-wordle-in-four-wordle-in4-wordle-win-gif-24571752")
             break;
-        case 5:
-            msg.reply("https://tenor.com/view/wordle-wordle-in5-wordle-in-five-wordle-meme-wordle-win-gif-24596089")
+        case '5':
+            msg.reply("womp womp https://tenor.com/view/wordle-wordle-in5-wordle-in-five-wordle-meme-wordle-win-gif-24596089")
             break;
-        case 6:
-            msg.reply("https://tenor.com/view/wordle-wordle-meme-wordle-in6-wordle-in-six-wordle-fail-gif-25053177")
+        case '6':
+            msg.reply(userId+"Dont fall for dem trixs https://tenor.com/view/wordle-wordle-meme-wordle-in6-wordle-in-six-wordle-fail-gif-25053177")
             break;
         default:
             msg.reply("I have been programed to say you failed in this instance https://tenor.com/view/wordle-wordle-challenging-wordle-fail-wordle-no-dictionary-wordle-hard-gif-24545672");
