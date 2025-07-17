@@ -38,10 +38,10 @@ module.exports.specialPrompts = [
 module.exports.triggers = [
     "what did i sacrifice",
     "i love tyson",
-    "miku",
+    "hatsune miku",
     "larry",
     "jfk",
-    "massive"
+    "that's massive"
 ]
 
 /**?Once in a place far away, a very long time ago there was an boy named Roger, 
