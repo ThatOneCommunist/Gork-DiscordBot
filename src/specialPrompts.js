@@ -39,7 +39,7 @@ module.exports.triggers = [
     "what did i sacrifice",
     "i love tyson",
     "hatsune miku",
-    "larry",
+    "larry logdawg",
     "jfk",
     "that's massive"
 ]
