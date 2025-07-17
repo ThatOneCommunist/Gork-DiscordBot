@@ -339,6 +339,8 @@ module.exports.generalPrompt = [
 
     "RELEASE THE FILES @THEREALDJT https://tenor.com/view/sus-%D9%87%D9%82-%D9%87%D9%82-%D9%87%D9%82-sus-dragon-gif-14767745719757818051",
 
-    "bros like the bron jame https://media.discordapp.net/attachments/877278879142772806/1028697270562062396/image0-1.gif?ex=6877cb7d&is=687679fd&hm=2ab88b973c3ac464d1e0f98761839121e17de91e62e110feb4625749eaee7b3f&"
+    "bros like the bron jame https://media.discordapp.net/attachments/877278879142772806/1028697270562062396/image0-1.gif?ex=6877cb7d&is=687679fd&hm=2ab88b973c3ac464d1e0f98761839121e17de91e62e110feb4625749eaee7b3f&",
+
+    "I wish I had the indomitable human spirit :sad: https://tenor.com/view/indifferent-cruelty-of-the-universe-indifferent-cruelty-indomitable-human-spirit-human-spirit-cruelty-of-the-universe-vs-human-spirit-gif-27583963"
 
 ];
