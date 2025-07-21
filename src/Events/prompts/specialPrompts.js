@@ -59,7 +59,7 @@ module.exports.specialPrompts = [
 module.exports.triggers = [
     "what did i sacrifice",
     "i love tyson",
-    "hatsune miku",
+    "miku",
     "larry",
     "jfk",
     "massive",
