@@ -6,6 +6,6 @@ module.exports = {
 		.setName("coinflip")
         .setDescription("Flip a coin heads or tails."),
 	async execute(interaction) {
-		await interaction.reply(coin[Math.random()]);
+		await interaction.reply(coin[Math.floor(Math.random()*coin.length)]);
 	},
 };
