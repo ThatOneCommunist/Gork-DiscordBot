@@ -1,0 +1,2 @@
+/jaxson and it pings and asks jaxson what hes passionate abt
+/dice int rolls a die

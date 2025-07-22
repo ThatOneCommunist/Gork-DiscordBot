@@ -207,7 +207,7 @@ module.exports.generalPrompt = [
 
     "Teachers make too much money.",
 
-    "Just Killed 3 por people.",
+    "Just Killed 4 and a half pors :smile:",
 
     "You know we may all have our disagreements but at the end of the day, it is night and thats all we have that connects us.",
 
@@ -266,7 +266,7 @@ module.exports.generalPrompt = [
 
     "what was that one vegtable from veggietales again:thinking: :thinking: ",
 
-    "https://tenor.com/view/gun-shooting-blue-shirt-gif-17302880\nhttps://tenor.com/view/gun-shooting-red-shirt-gif-17302883",
+    "https://tenor.com/view/gun-shooting-blue-shirt-gif-17302880\n https://tenor.com/view/gun-shooting-red-shirt-gif-17302883",
 
     "bidon america https://tenor.com/view/imagine-fent-here-fent-gif-9195831783787869252",
 
@@ -343,6 +343,12 @@ module.exports.generalPrompt = [
 
     "I wish I had the indomitable human spirit :sad: https://tenor.com/view/indifferent-cruelty-of-the-universe-indifferent-cruelty-indomitable-human-spirit-human-spirit-cruelty-of-the-universe-vs-human-spirit-gif-27583963",
 
-    "https://cdn.discordapp.com/attachments/1319845797713412159/1396576899626434721/sonic.png?ex=687e9718&is=687d4598&hm=41247674db5520bc3ae1d43d4e20df5feeef6e256eaf79dcccb73af9e49d8817&"
+    "https://cdn.discordapp.com/attachments/1319845797713412159/1396576899626434721/sonic.png?ex=687e9718&is=687d4598&hm=41247674db5520bc3ae1d43d4e20df5feeef6e256eaf79dcccb73af9e49d8817&",
+
+    "Decrease the minimum wage.",
+
+    "<@626531197484269578> literally you :nerd: ::point_up: ",
+
+    "GIVE ME DEV IDEAS"
 
 ];

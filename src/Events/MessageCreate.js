@@ -33,11 +33,11 @@ function MessageCreate(msg){
             msg.author.send("<@890678553304244264> "+jaxcount);
             jaxcount += 1;
             break;
-        default:
-            if (msg.author.id != '1393814433473757255'){
-                SpecialCaseSearch(triggers,specialPrompts,msg);
-            }
+        case(msg.author.id != '1393814433473757255'):
+            SpecialCaseSearch(triggers,specialPrompts,msg);
             break;
+            
+            
     }
 };
 
