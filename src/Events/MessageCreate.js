@@ -3,9 +3,11 @@ const { questionprompts } = require('./prompts/questionPrompts.js');
 const { specialPrompts , triggers } = require('./prompts/specialPrompts.js');
 var botId = '<@1393814433473757255>'; // Easy way to check for if Gork is @ed
 var jaxcount = 1
+var userId = ""
 
 // random message if he is @ed and asked is this true
 function MessageCreate(msg){
+    var userId = "<@"+msg.author.id+">";
     console.log(msg.content + msg.createdTimestamp)
     switch (true){
         // Question statement TODO: ADD MORE
@@ -33,6 +35,7 @@ function MessageCreate(msg){
             msg.author.send("<@890678553304244264> "+jaxcount);
             jaxcount += 1;
             break;
+        // Special Case
         case(msg.author.id != '1393814433473757255'):
             SpecialCaseSearch(triggers,specialPrompts,msg);
             break;

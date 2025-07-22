@@ -349,6 +349,12 @@ module.exports.generalPrompt = [
 
     "<@626531197484269578> literally you :nerd: ::point_up: ",
 
-    "GIVE ME DEV IDEAS"
+    "GIVE ME DEV IDEAS",
+
+    "Use '/jaxson' for a great time",
+
+    "Erm What the Skibidi",
+
+    "Standing Ovulation"
 
 ];
