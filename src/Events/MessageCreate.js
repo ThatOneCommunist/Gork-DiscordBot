@@ -6,7 +6,7 @@ var jaxcount = 1
 
 // random message if he is @ed and asked is this true
 function MessageCreate(msg){
-    console.log(msg.content);
+    console.log(msg.content + msg.createdTimestamp)
     switch (true){
         // Question statement TODO: ADD MORE
         case(msg.content.toLowerCase().includes((botId+" is this true"))) || 
