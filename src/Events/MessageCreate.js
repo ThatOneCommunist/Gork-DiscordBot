@@ -29,17 +29,16 @@ function MessageCreate(msg){
             msg.reply("SAY MY NAME CORRECTLY")
             msg.react('😡')
             break;
+        // Special Case
+        case(msg.author.id != '1393814433473757255'):
+            SpecialCaseSearch(triggers,specialPrompts,msg);
+            break;
         // JAXSON SPAM
         case(msg.author.id.includes('890678553304244264')):
             msg.author.send("<@890678553304244264> "+jaxcount);
             jaxcount += 1;
             break;
-        // Special Case
-        case(msg.author.id != '1393814433473757255'):
-            SpecialCaseSearch(triggers,specialPrompts,msg);
-            break;
-            
-            
+
     }
 };
 
@@ -66,7 +65,7 @@ function Wordle(int,msg, userId){
             msg.reply(userId+"Dont fall for dem trixs https://tenor.com/view/wordle-wordle-meme-wordle-in6-wordle-in-six-wordle-fail-gif-25053177")
             break;
         default:
-            msg.reply("I have been programed to say you failed in this instance https://tenor.com/view/wordle-wordle-challenging-wordle-fail-wordle-no-dictionary-wordle-hard-gif-24545672");
+            msg.reply("I have been programed to say "+userId+" failed in this instance https://tenor.com/view/wordle-wordle-challenging-wordle-fail-wordle-no-dictionary-wordle-hard-gif-24545672");
             break;
     }
 }
