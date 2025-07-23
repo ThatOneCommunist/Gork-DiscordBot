@@ -11,7 +11,7 @@ client.on(Events.MessageReactionAdd, react=>{
     MessageReaction(react);
 });
 client.on(Events.MessageCreate, msg =>{
-    console.log(msg.content +" "+msg.createdAt.getHours()+":"+msg.createdAt.getMinutes())// Bad way to log timestamp
+    console.log(msg.createdAt.getHours()+":"+msg.createdAt.getMinutes()+" "+msg.content)// Bad way to log timestamp
     MessageCreate(msg)
 });
 client.on(Events.InteractionCreate, interaction =>{
