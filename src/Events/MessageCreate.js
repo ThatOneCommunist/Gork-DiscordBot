@@ -18,7 +18,7 @@ function MessageCreate(msg){
         // WORDLE BOT TODO: ADD A REGEX DOES NOT WORK
         case(msg.content.includes(botId) && msg.content.toLowerCase().includes('wordle')):
             let wordInt = msg.content.replace(/[^1-6]/gis ,"");// Removes anything thats not a number
-            Wordle(wordInt.replace('13314433435255',''),msg);// Removes Gorks ID
+            Wordle(wordInt.replace('13314433435255',''),msg, userId);// Removes Gorks ID
             break;
         // Have @GORK above this case
         case(msg.content.includes(botId)):
@@ -45,7 +45,7 @@ function MessageCreate(msg){
 
 
 
-function Wordle(int,msg){
+function Wordle(int,msg, userId){
     switch (int){
         case '1':
             msg.reply(userId+" cheated")
