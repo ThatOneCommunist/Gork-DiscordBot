@@ -8,7 +8,6 @@ var userId = ""
 // random message if he is @ed and asked is this true
 function MessageCreate(msg){
     var userId = "<@"+msg.author.id+">";
-    console.log(msg.content + msg.createdTimestamp)
     switch (true){
         // Question statement TODO: ADD MORE
         case(msg.content.toLowerCase().includes((botId+" is this true"))) || 

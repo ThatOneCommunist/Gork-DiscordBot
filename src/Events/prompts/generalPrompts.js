@@ -30,7 +30,7 @@ module.exports.generalPrompt = [
 
     "*gorks it*",
 
-    "***gorks harder***",
+    "***gorks harder*** https://tenor.com/view/ben-shapiro-love-masturbate-jerking-off-jerking-gif-15272010",
 
     "Yo, anyone wanna join my chutes and ladders tournament?",
 
@@ -355,6 +355,32 @@ module.exports.generalPrompt = [
 
     "Erm What the Skibidi",
 
-    "Standing Ovulation"
+    "Standing Ovulation https://tenor.com/view/clapping-wow-wow-starts-clapping-gif-23651813",
 
+    "<@663106262359080971> https://cdn.discordapp.com/attachments/1327803024344616972/1397432301553586206/watermark.webp?ex=6881b3bf&is=6880623f&hm=b74c060f678a8e9d3207509c6266264eb7b4e28d584a6b75cc1ee9f68f65d58b&",
+
+    "Great job you can use a keyboard https://tenor.com/view/doug-walker-nostalgia-critic-clap-gif-22806849",
+
+    "you interupted me while i was fine dining on this :drooling_face: https://tenor.com/view/spinning-food-spinny-food-spinning-food-gyrating-gif-26651526",
+
+    ":face_vomiting: :face_vomiting: https://cdn.discordapp.com/attachments/1327803024344616972/1397434568281297008/image.png?ex=6881b5dc&is=6880645c&hm=52638839d56b72a223f59837e1d212d474a00cb3ce12fc5d756fbcba9215f14d&",
+
+    "```  🧠 /n"+
+    " 👂👁️👁️👂 /n"+
+    "     👃 /n"+
+    "     👄 /n"+
+    "🤛🫁🫀🤜/n"+
+    "  🦶 🦶'''",
+
+    "I have survelience of your bedroom right now 👁️👄👁️",
+
+    "real https://cdn.discordapp.com/attachments/1327803024344616972/1397438822941331578/be0xm1h43zsi.gif?ex=6881b9d2&is=68806852&hm=fd1245318c9bccf14e1ac74e7ab7e73f031cd9858574f93d8f203df1b62e15b1&",
+
+    "https://tenor.com/view/chinese-ben-shapiro-ben-shapiro-social-credit-gif-6133430005061019",
+
+    "WHAT DID THEY DO TO MY ALPHA https://tenor.com/view/ben-shapiro-trans-shapiro-trans-rights-trans-ben-shapiro-facts-dont-care-about-your-feelings-gif-19126156",
+
+    "the only skibidi toilet I would watch https://tenor.com/view/ben-shapiro-skibidi-toilet-skibidi-ben-gif-11622695506051931960",
+
+    "Hur hur hur hur hur hur hur hur https://tenor.com/view/ben-shapiro-skibidi-toilet-skibidi-ben-gif-11622695506051931960"
 ];

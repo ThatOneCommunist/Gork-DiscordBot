@@ -1,2 +1,2 @@
-/jaxson and it pings and asks jaxson what hes passionate abt
+/jaxson add 
 /dice int rolls a die
