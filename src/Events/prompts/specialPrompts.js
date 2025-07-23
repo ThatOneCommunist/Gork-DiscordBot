@@ -55,7 +55,13 @@ module.exports.specialPrompts = [
     // Gabe FR
     "ON MY MOMMA THATS TRUE :100:",
     // Liberal
-    "DID I HEAR A SOY REFERENCE????????"
+    "DID I HEAR A SOY REFERENCE????????",
+    // Royce Dupont
+    "I love Royce https://tenor.com/view/royce-royce-dupont-dupont-royce-du-pont-gif-3755189119331543741",
+    //HomeLander drinking milk
+    "https://tenor.com/view/homelander-milk-antony-starr-gif-2606354610122003363",
+    // Vapeoreon
+    "that in terms of male human and female Pokémon breeding, Vaporeon is the most compatible Pokémon for humans? Not only are they in the field egg group, which is mostly comprised of mammals, Vaporeon are an average of 3”03’ tall and 63.9 pounds, this means they’re large enough to be able handle human , and with their impressive Base Stats for HP and access to Acid Armor, you can be rough with one. Due to their mostly water based biology, there’s no doubt in my mind that an aroused Vaporeon would be incredibly wet, so wet that you could easily have with one for hours without getting sore. They can also learn the moves Attract, Baby-Doll Eyes, Captivate, Charm, and Tail Whip, along with not having fur to hide **, so it’d be incredibly easy for one to get you in the mood. With their abilities Water Absorb and Hydration, they can easily recover from fatigue with enough water. No other Pokémon comes close to this level of compatibility. Also, fun fact, if you pull out enough, you can make your Vaporeon turn white. Vaporeon is literally built for human . Ungodly defense stat+high HP pool+Acid Armor means it can take  all day, all shapes and sizes and still come for more"
 ]
 
 module.exports.triggers = [
@@ -66,6 +72,9 @@ module.exports.triggers = [
     "jfk",
     "massive",
     "gabe is a furry",
-    "liberal"
+    "liberal",
+    "royce dupont",
+    "kinky",
+    "vaporeon"
 ]
 

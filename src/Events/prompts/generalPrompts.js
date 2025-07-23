@@ -382,5 +382,21 @@ module.exports.generalPrompt = [
 
     "the only skibidi toilet I would watch https://tenor.com/view/ben-shapiro-skibidi-toilet-skibidi-ben-gif-11622695506051931960",
 
-    "Hur hur hur hur hur hur hur hur https://tenor.com/view/ben-shapiro-skibidi-toilet-skibidi-ben-gif-11622695506051931960"
+    "Hur hur hur hur hur hur hur hur https://tenor.com/view/ben-shapiro-skibidi-toilet-skibidi-ben-gif-11622695506051931960",
+
+    "china miku https://cdn.discordapp.com/attachments/1319845797713412159/1397456171278794833/IMG_3305.png?ex=6881c9fa&is=6880787a&hm=a776a767cbfa61bc068e148acbfaf551bedaa99ad4d04e2a51f34231ea803af8&",
+
+    "MMMMMMMMHHHHHH https://tenor.com/view/1984-george-orwell-george-orwell-1984-1984-chips-1984-ruffles-gif-7144052804264359069",
+
+    "https://tenor.com/view/weather-penis-forecast-gif-15544929 Johnny sins is that you",
+
+    "no context https://tenor.com/view/roblox-roblox-meme-roblox-memes-boi-wtf-twerk-gif-6690897771582534374",
+
+    "I LOVE HOT MEN https://tenor.com/view/woman-women-am-i-right-woman-am-i-right-gif-23666905",
+
+    "ACAB https://media.discordapp.net/attachments/1127855864200568932/1187495881906335835/bounce.gif?ex=688149b8&is=687ff838&hm=3443d08e564112282087884656574d166a7e6a1af56ad143d43a3d0260253c83&",
+
+    "https://tenor.com/view/sparkle-on-its-wednesday-dont-forget-to-be-yourself-jerma-slay-gif-26287606",
+
+    "XAI got a $200 mil contract with the pentagon WHERES MINE @THEREALDJT"
 ];
