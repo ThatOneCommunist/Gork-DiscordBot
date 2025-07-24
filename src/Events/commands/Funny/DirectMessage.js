@@ -16,6 +16,12 @@ module.exports = {
 			.setRequired(true)
 		),
 	async execute(interaction) {
-		await client.users.send(interaction.options.getUser('user').id.toString(),interaction.options.getString('message'));
+		try {
+			await client.users.send(interaction.options.getUser('user').id.toString(),interaction.options.getString('message'));
+		} catch (error) {
+			console.log(error)
+			interaction.reply("Did not send :(")
+		}
+		
 	},
 };

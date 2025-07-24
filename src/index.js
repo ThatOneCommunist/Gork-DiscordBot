@@ -12,7 +12,7 @@ client.on(Events.MessageReactionAdd, react=>{
 });
 client.on(Events.MessageCreate, msg =>{
     message = msg.createdAt.getHours()+":"+msg.createdAt.getMinutes()+" "+msg.author.username+" "+msg.content// Bad way to log timestamp
-    if (!msg.inGuild()&&msg.author.id!=client.user.id)
+    if (!msg.inGuild()&&msg.channelId!="1394019812015079495")
         client.users.send("746772138731765820", message);
     console.log(message);
     MessageCreate(msg)
