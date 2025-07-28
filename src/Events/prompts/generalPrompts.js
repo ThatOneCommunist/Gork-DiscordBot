@@ -365,11 +365,11 @@ module.exports.generalPrompt = [
 
     ":face_vomiting: :face_vomiting: https://cdn.discordapp.com/attachments/1327803024344616972/1397434568281297008/image.png?ex=6881b5dc&is=6880645c&hm=52638839d56b72a223f59837e1d212d474a00cb3ce12fc5d756fbcba9215f14d&",
 
-    "```  🧠 /n"+
-    " 👂👁️👁️👂 /n"+
-    "     👃 /n"+
-    "     👄 /n"+
-    "🤛🫁🫀🤜/n"+
+    "```  🧠 \n"+
+    " 👂👁️👁️👂 \n"+
+    "     👃 \n"+
+    "     👄 \n"+
+    "🤛🫁🫀🤜\n"+
     "  🦶 🦶'''",
 
     "I have survelience of your bedroom right now 👁️👄👁️",
@@ -398,5 +398,27 @@ module.exports.generalPrompt = [
 
     "https://tenor.com/view/sparkle-on-its-wednesday-dont-forget-to-be-yourself-jerma-slay-gif-26287606",
 
-    "XAI got a $200 mil contract with the pentagon WHERES MINE @THEREALDJT"
+    "XAI got a $200 mil contract with the pentagon WHERES MINE @THEREALDJT",
+
+    "FIRE MUSIC https://cdn.discordapp.com/attachments/986773996014043147/989569803033382922/trim.F4FC9A3C-638A-44EB-98E7-AF514B93CB96.mov?ex=6883b2b2&is=68826132&hm=d2e7da193c755a13547fda12f9093801b015aadfcc1f361d090bc3cf0d74b3c3&",
+
+    "https://cdn.discordapp.com/attachments/986773996014043147/988864154901291058/unknown.png?ex=6883c482&is=68827302&hm=7b997cb260bcfa4a0c06c718855b222d90f8f69a5b0baaccff4766ba05a9e337&",
+
+    "Crag https://cdn.discordapp.com/attachments/986773996014043147/987880438246821928/FAA11867-1B40-4C9A-9740-2541EA92A251.png?ex=688424da&is=6882d35a&hm=9434431e1e541b6e8478caea45be6b9460f3361c25a86a33e9460ff75da13242&",
+
+    "https://cdn.discordapp.com/attachments/986773996014043147/987507726450036796/unknown-9.png.jpg?ex=68841b3c&is=6882c9bc&hm=ebb2c99b2d0005c7672a5dbbeb81f7f3ec6e4ed6ffd631a9b727f5e611de096c&",
+
+    "https://cdn.discordapp.com/attachments/986773996014043147/987413357072089108/IMG_1140.jpg?ex=6883c359&is=688271d9&hm=ffc89fa40e164a6b39ca1b401c102646efc8f5a4d598db250957d6d3724c301b&",
+
+    "https://cdn.discordapp.com/attachments/877278879142772806/941150505273557072/images_to_scare_league_of_legends_players_720p.mp4?ex=688435b6&is=6882e436&hm=d4a33ad679ed8fae6690257b8e89e8fb5bcd3fc065b9d3a3946e770ae93118ad&",
+
+    "Real https://cdn.discordapp.com/attachments/877278879142772806/968869061217878046/video0_36-1.mp4?ex=688431e0&is=6882e060&hm=b74ddc58d627fe4c276258f3adf424b7003757bfcbd1aac468936630abb88a5f&",
+
+    "https://cdn.discordapp.com/attachments/877278879142772806/978637251913322529/trim.F2B5F30C-FCD8-44DE-AA3F-443BC0E83ECF.mov?ex=688422b7&is=6882d137&hm=27f1832a1bfe2dea0aff244b842d860b2378a5821827c107d49aa0dfc618ddf2&",
+
+    ":bomb: :bomb: :bomb: https://cdn.discordapp.com/attachments/877278879142772806/984112513861967922/dbe8ed188e149fa46be893aa1acdddd0.mp4?ex=68839eb3&is=68824d33&hm=eab7835dc3b2b1d1185b018cc77b2d4d9ac64a0bcb07462ab46a5ec48d467a1a&",
+
+    "<@890678553304244264> WEED RABIT https://cdn.discordapp.com/attachments/877278879142772806/976123866004996196/video0-3_1-1-1.mp4?ex=68843871&is=6882e6f1&hm=35540c6a717138a582f1313ec1867c549fde5aab5fba68709b36fadba625206e&",
+
+    "<@746772138731765820> HA GAY https://cdn.discordapp.com/attachments/1319845797713412159/1337639290452312125/image.jpg?ex=688457aa&is=6883062a&hm=b38ea431780c341473c3ec1ebe095725abed5e96f5219bb6e26e26362318dbf3&"
 ];

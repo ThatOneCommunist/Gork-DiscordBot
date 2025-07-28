@@ -61,7 +61,11 @@ module.exports.specialPrompts = [
     //HomeLander drinking milk
     "https://tenor.com/view/homelander-milk-antony-starr-gif-2606354610122003363",
     // Vapeoreon
-    "that in terms of male human and female Pokémon breeding, Vaporeon is the most compatible Pokémon for humans? Not only are they in the field egg group, which is mostly comprised of mammals, Vaporeon are an average of 3”03’ tall and 63.9 pounds, this means they’re large enough to be able handle human , and with their impressive Base Stats for HP and access to Acid Armor, you can be rough with one. Due to their mostly water based biology, there’s no doubt in my mind that an aroused Vaporeon would be incredibly wet, so wet that you could easily have with one for hours without getting sore. They can also learn the moves Attract, Baby-Doll Eyes, Captivate, Charm, and Tail Whip, along with not having fur to hide **, so it’d be incredibly easy for one to get you in the mood. With their abilities Water Absorb and Hydration, they can easily recover from fatigue with enough water. No other Pokémon comes close to this level of compatibility. Also, fun fact, if you pull out enough, you can make your Vaporeon turn white. Vaporeon is literally built for human . Ungodly defense stat+high HP pool+Acid Armor means it can take  all day, all shapes and sizes and still come for more"
+    "that in terms of male human and female Pokémon breeding, Vaporeon is the most compatible Pokémon for humans? Not only are they in the field egg group, which is mostly comprised of mammals, Vaporeon are an average of 3”03’ tall and 63.9 pounds, this means they’re large enough to be able handle human , and with their impressive Base Stats for HP and access to Acid Armor, you can be rough with one. Due to their mostly water based biology, there’s no doubt in my mind that an aroused Vaporeon would be incredibly wet, so wet that you could easily have with one for hours without getting sore. They can also learn the moves Attract, Baby-Doll Eyes, Captivate, Charm, and Tail Whip, along with not having fur to hide **, so it’d be incredibly easy for one to get you in the mood. With their abilities Water Absorb and Hydration, they can easily recover from fatigue with enough water. No other Pokémon comes close to this level of compatibility. Also, fun fact, if you pull out enough, you can make your Vaporeon turn white. Vaporeon is literally built for human . Ungodly defense stat+high HP pool+Acid Armor means it can take  all day, all shapes and sizes and still come for more",
+    // Angry Birds
+    ":red_circle: https://cdn.discordapp.com/attachments/986773996014043147/989917776879697990/amgry_birds.mp4?ex=6883a545&is=688253c5&hm=d5321e64e303873f5cf140511d2a6c9d811563471ea8885a42827a836525bf3c&",
+    // Dave and Busters
+    "https://cdn.discordapp.com/attachments/986773996014043147/989560481071124580/trim.F93CB43A-24C8-443E-B89F-583E55D93650.mov?ex=6883aa03&is=68825883&hm=cb62003f62c6c7bd907ddf027afa5a44c70f4df213c15a42ab6549472894a1c0&"
 ]
 
 module.exports.triggers = [
@@ -75,6 +79,8 @@ module.exports.triggers = [
     "liberal",
     "royce dupont",
     "kinky",
-    "vaporeon"
+    "vaporeon",
+    "angry bird",
+    "dave and busters"
 ]
 

@@ -1,3 +1,4 @@
+const { getRandomIntInclusive } = require('./randomValues.js');
 const { generalPrompt } =  require('./prompts/generalPrompts.js');
 const { questionprompts } = require('./prompts/questionPrompts.js');
 const { specialPrompts , triggers } = require('./prompts/specialPrompts.js');
@@ -13,7 +14,7 @@ function MessageCreate(msg){
         case(msg.content.toLowerCase().includes((botId+" is this true"))) || 
         (msg.content.toLowerCase().includes(botId+" is this fake")) || 
         (msg.content.toLowerCase().includes(botId+" is this false")) :
-            msg.reply(questionprompts[Math.floor(Math.random()*questionprompts.length)]);
+            msg.reply(questionprompts[getRandomIntInclusive(questionprompts)]);
             break;
         // WORDLE BOT TODO: ADD A REGEX DOES NOT WORK
         case(msg.content.includes(botId) && msg.content.toLowerCase().includes('wordle')):
@@ -22,7 +23,7 @@ function MessageCreate(msg){
             break;
         // Have @GORK above this case
         case(msg.content.includes(botId)):
-            msg.reply(generalPrompt[Math.floor(Math.random()*generalPrompt.length)]);
+            msg.reply(generalPrompt[getRandomIntInclusive(generalPrompt)]);
             break;
         // GORK MISPELL
         case(msg.content.includes("@hork") || msg.content.includes('@grok')):
@@ -59,7 +60,7 @@ function Wordle(int,msg, userId){
             msg.reply("here "+userId+"ROAR :wolf: https://tenor.com/view/wordle-wordle-in-four-wordle-in4-wordle-win-gif-24571752")
             break;
         case '5':
-            msg.reply("womp womp https://tenor.com/view/wordle-wordle-in5-wordle-in-five-wordle-meme-wordle-win-gif-24596089")
+            msg.reply(userId+"womp womp https://tenor.com/view/wordle-wordle-in5-wordle-in-five-wordle-meme-wordle-win-gif-24596089")
             break;
         case '6':
             msg.reply(userId+"Dont fall for dem trixs https://tenor.com/view/wordle-wordle-meme-wordle-in6-wordle-in-six-wordle-fail-gif-25053177")

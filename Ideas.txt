@@ -1,2 +1,3 @@
-/jaxson add 
 /dice int rolls a die
+/translate for mandarin and english translation
+/wire logs the voice channel to my dms

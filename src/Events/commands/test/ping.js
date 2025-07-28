@@ -5,6 +5,10 @@ module.exports = {
 		.setName('ping')
 		.setDescription('Replies with Pong!'),
 	async execute(interaction) {
-		await interaction.reply('Pong!');
+		try {
+			await interaction.reply('Pong! '+client.ws.ping+"ms");
+		} catch (error) {
+			console.log(error);
+		}
 	},
 };
