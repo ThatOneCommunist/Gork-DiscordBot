@@ -65,7 +65,9 @@ module.exports.specialPrompts = [
     // Angry Birds
     ":red_circle: https://cdn.discordapp.com/attachments/986773996014043147/989917776879697990/amgry_birds.mp4?ex=6883a545&is=688253c5&hm=d5321e64e303873f5cf140511d2a6c9d811563471ea8885a42827a836525bf3c&",
     // Dave and Busters
-    "https://cdn.discordapp.com/attachments/986773996014043147/989560481071124580/trim.F93CB43A-24C8-443E-B89F-583E55D93650.mov?ex=6883aa03&is=68825883&hm=cb62003f62c6c7bd907ddf027afa5a44c70f4df213c15a42ab6549472894a1c0&"
+    "https://cdn.discordapp.com/attachments/986773996014043147/989560481071124580/trim.F93CB43A-24C8-443E-B89F-583E55D93650.mov?ex=6883aa03&is=68825883&hm=cb62003f62c6c7bd907ddf027afa5a44c70f4df213c15a42ab6549472894a1c0&",
+    // Among Us
+    "Sussy Baka https://tenor.com/view/inspector-lunge-among-us-monster-naoki-urasawa-heinrich-lunge-gif-16546145040661683494"
 ]
 
 module.exports.triggers = [
@@ -81,6 +83,7 @@ module.exports.triggers = [
     "kinky",
     "vaporeon",
     "angry bird",
-    "dave and busters"
+    "dave and busters",
+    "sus"
 ]
 

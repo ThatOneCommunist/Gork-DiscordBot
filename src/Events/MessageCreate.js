@@ -14,7 +14,7 @@ function MessageCreate(msg){
         case(msg.content.toLowerCase().includes((botId+" is this true"))) || 
         (msg.content.toLowerCase().includes(botId+" is this fake")) || 
         (msg.content.toLowerCase().includes(botId+" is this false")) :
-            msg.reply(questionprompts[getRandomIntInclusive(questionprompts)]);
+            msg.reply(questionprompts[getRandomIntInclusive(questionprompts.length)]);
             break;
         // WORDLE BOT TODO: ADD A REGEX DOES NOT WORK
         case(msg.content.includes(botId) && msg.content.toLowerCase().includes('wordle')):
@@ -23,7 +23,7 @@ function MessageCreate(msg){
             break;
         // Have @GORK above this case
         case(msg.content.includes(botId)):
-            msg.reply(generalPrompt[getRandomIntInclusive(generalPrompt)]);
+            msg.reply(generalPrompt[getRandomIntInclusive(generalPrompt.length)]);
             break;
         // GORK MISPELL
         case(msg.content.includes("@hork") || msg.content.includes('@grok')):
