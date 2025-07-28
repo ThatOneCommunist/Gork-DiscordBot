@@ -9,7 +9,7 @@ module.exports = {
         .setDescription("Flip a coin heads or tails."),
 	async execute(interaction) {
 		try {
-			await interaction.reply(coin[getRandomIntInclusive(coin)]);
+			await interaction.reply(coin[getRandomIntInclusive(coin.length)]);
 		} catch (error) {
 			console.log(error);
 		}
