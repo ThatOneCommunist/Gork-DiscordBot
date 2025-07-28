@@ -1,5 +1,5 @@
-const { client } = require('./client.js');
-const { botID, token } = require('./config.json')
+const { client } = require('./../util/client.js');
+const { botID, token } = require('./../util/config.json')
 const { REST, Routes, Collection  } = require('discord.js');
 const fs = require('node:fs');
 const path = require('node:path');

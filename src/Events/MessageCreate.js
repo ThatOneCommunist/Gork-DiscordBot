@@ -1,4 +1,4 @@
-const { getRandomIntInclusive } = require('./randomValues.js');
+const { getRandomIntInclusive } = require('../util/randomValues.js');
 const { generalPrompt } =  require('./prompts/generalPrompts.js');
 const { questionprompts } = require('./prompts/questionPrompts.js');
 const { specialPrompts , triggers } = require('./prompts/specialPrompts.js');

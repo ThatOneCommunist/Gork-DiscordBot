@@ -1,5 +1,5 @@
-const { token } = require('./Events/config.json');
-const { client } = require('./Events/client.js');
+const { token } = require('./util/config.json');
+const { client } = require('./util/client.js');
 const { Events } = require('discord.js');
 const { MessageReaction } = require('./Events/Reaction.js');
 const { Ready } = require('./Events/Ready.js');
