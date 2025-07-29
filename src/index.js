@@ -17,12 +17,17 @@ client.on(Events.MessageReactionAdd, react=>{
 });
 client.on(Events.MessageCreate, msg =>{
     message = msg.createdAt.getHours()+":"+msg.createdAt.getMinutes()+" "+msg.author.username+" "+msg.content// Bad way to log timestamp
-    if (!msg.inGuild()&&msg.channelId!="1394019812015079495")// Logs to my DM
-        client.users.send("746772138731765820", message);
-    console.log(message);
-    MessageCreate(msg)
+    if (msg.channelId!="1394019812015079495"){// Logs to my DM
+        if(!msg.inGuild()){
+        client.users.send("746772138731765820", message)};
+        console.log(message);
+    }
+    MessageCreate(msg);
 });
 client.on(Events.InteractionCreate, interaction =>{
     CommandDeploy(interaction)
+    if(interaction.isChatInputCommand()){
+        console.log(interaction.commandName+" "+interaction.user.tag)
+    }
 });
 client.login(token);

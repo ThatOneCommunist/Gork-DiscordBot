@@ -18,6 +18,7 @@ module.exports = {
 	async execute(interaction) {
 		try {
 			await client.users.send(interaction.options.getUser('user').id.toString(),interaction.options.getString('message'));
+			console.log(interaction.options.getUser('user').tag.toString())
 		} catch (error) {
 			console.log(error)
 			interaction.reply("Did not send :(")
