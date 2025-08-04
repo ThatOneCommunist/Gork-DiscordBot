@@ -25,6 +25,9 @@ function MessageReaction(react){
         case("🥵"):
             react.message.reply("https://tenor.com/view/horny-horny-meter-super-horny-gif-17623996");
             break;
+        case("😈"):
+            react.message.reply("https://tenor.com/view/asgore-run-over-triki-troy-deltarune-gif-17995477417765303444");
+            break;
     }}
 
 module.exports = {

@@ -1,4 +1,4 @@
-const { SlashCommandBuilder } = require('discord.js');
+const { SlashCommandBuilder, MessageFlags } = require('discord.js');
 const { client } = require('../../../util/client.js');
 
 module.exports = {
@@ -18,10 +18,11 @@ module.exports = {
 	async execute(interaction) {
 		try {
 			await client.users.send(interaction.options.getUser('user').id.toString(),interaction.options.getString('message'));
-			console.log(interaction.options.getUser('user').tag.toString())
+			console.log(interaction.options.getUser('user').tag.toString());
+			interaction.reply({content: `${interaction.options.getString("message")} sent`,flags: MessageFlags.Ephemeral });
 		} catch (error) {
-			console.log(error)
-			interaction.reply("Did not send :(")
+			console.log(error);
+			interaction.reply({content:"Did not send :(",flags: MessageFlags.Ephemeral});
 		}
 		
 	},

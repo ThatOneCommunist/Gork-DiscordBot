@@ -5,7 +5,8 @@ const { MessageReaction } = require('./Events/Reaction.js');
 const { Ready } = require('./Events/Ready.js');
 const { MessageCreate } = require('./Events/MessageCreate.js');
 const { CommandDeploy } = require('./Events/Command.js');
-
+const { joinVoiceChannel } = require('@discordjs/voice');
+const { connection } = require('./util/connection.js');
 global.self = global;
 Ready();
 client.on(Events.Error, error =>{
