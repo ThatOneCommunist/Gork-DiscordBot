@@ -19,7 +19,7 @@ module.exports = {
 		try {
 			await client.users.send(interaction.options.getUser('user').id.toString(),interaction.options.getString('message'));
 			console.log(interaction.options.getUser('user').tag.toString());
-			interaction.reply({content: `${interaction.options.getString("message")} sent`,flags: MessageFlags.Ephemeral });
+			interaction.reply({content: `sent`,flags: MessageFlags.Ephemeral });
 		} catch (error) {
 			console.log(error);
 			interaction.reply({content:"Did not send :(",flags: MessageFlags.Ephemeral});

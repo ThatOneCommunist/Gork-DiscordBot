@@ -1,18 +1,18 @@
 const { SlashCommandBuilder, MessageFlags } = require('discord.js');
-const { client } = require('../../../util/client');
-const util = require('util');
 const fs = require('fs')
-const TextToSpeech = require('@google-cloud/text-to-speech');
 const { AudioPlayer, createAudioPlayer, NoSubscriberBehavior, createAudioResource } = require('@discordjs/voice');
 const { joinVoiceChannel } = require('@discordjs/voice');
-require('./../../../../serviceaccount.json')
+const { join } = require('path');
+const path = require('path');
+const tts = require('google-tts-api');
+const axios = require('axios');
 
 const player = createAudioPlayer({
   behaviors:{
     noSubscriber: NoSubscriberBehavior.Pause,
   }
 })
-
+const filepath = path.join(__dirname,'tts.mp3')
 
 module.exports = {
 	data: new SlashCommandBuilder()
@@ -22,19 +22,20 @@ module.exports = {
             msg.setDescription("message to Send")
             .setRequired(true)
             .setName("message")
+            .setMaxLength(200)
         ),
 	async execute(interaction) {
 		try {
-			convertTextToMp3(interaction.options.getString("message"),'tts.mp3')
-      const resource = createAudioResource('tts.mp3');
+			textToSpeech(interaction.options.getString("message"),'en',filepath)
+      const resource = await createAudioResource(filepath);
       const connection = joinVoiceChannel({
-        channelId: interaction.member.voicechannel.id,
+        channelId: interaction.member.voice.channel.id,
         guildId: interaction.guild.id,
         adapterCreator: interaction.guild.voiceAdapterCreator,
       });
-      player.play(resource)
       connection.subscribe(player)
-			await interaction.reply({content:`${interaction.options.getString("message")}`,flags:MessageFlags.Ephemeral});
+      player.play(resource)
+			await interaction.reply({content:`message recieved`,flags:MessageFlags.Ephemeral});
 		} catch (error) {
 			console.log(error);
       interaction.reply("I want to kill myself");
@@ -42,19 +43,21 @@ module.exports = {
 	},
 };
 
-async function convertTextToMp3(text, outputPath) {
-    const ttsclient = new TextToSpeech.TextToSpeechClient
-    const request = {
-      input: { text: text },
-      voice: { languageCode: 'en-US', ssmlGender: 'NEUTRAL' },
-      audioConfig: { audioEncoding: 'MP3' },
-    };
-  
-    const [response] = ttsclient.synthesizeSpeech(request);
-    const writeFile = util.promisify(fs.writeFile);
-    await writeFile(outputPath, response.audioContent, 'binary');
-    console.log(`Audio content written to file: ${outputPath}`);
+
+// Function to convert text to speech and save as an audio file
+async function textToSpeech(text, language, outputFile) {
+  try {
+    const url = await tts.getAudioUrl(text, {
+      lang: language || 'en',
+      slow: false,
+      host: 'https://translate.google.com',
+    });
+    console.log(url);
+    const response = await axios.get(url, { responseType: 'arraybuffer' });
+
+    fs.writeFileSync(outputFile, Buffer.from(response.data));
+  } catch (error) {
+    console.error('Error converting text to speech:', error);
+  }
 }
-
-
 

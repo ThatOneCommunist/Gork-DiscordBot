@@ -422,6 +422,10 @@ module.exports.generalPrompt = [
 
     "<@746772138731765820> HA GAY https://cdn.discordapp.com/attachments/1319845797713412159/1337639290452312125/image.jpg?ex=688457aa&is=6883062a&hm=b38ea431780c341473c3ec1ebe095725abed5e96f5219bb6e26e26362318dbf3&",
 
-    "great movie https://imgur.com/IsWDJWa"
+    "great movie https://imgur.com/IsWDJWa",
+
+    "Cracker Ahh meal https://tenor.com/view/tyler-the-creator-mayonags-tyler-the-creator-mayonags-gif-9524233832148386694",
+
+    "ITS FREE AWOOGA https://cdn.discordapp.com/emojis/1335814078781984788.webp?size=96"
     
 ];

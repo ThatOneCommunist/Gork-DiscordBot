@@ -15,7 +15,7 @@ module.exports = {
         ),
 	async execute(interaction) {
 		try {
-			await interaction.reply(diceoptions[getRandomIntInclusive(interaction.options.getInteger('number')-1)]);
+			await interaction.reply(`Out of ${interaction.getInteger('number')} you got a ${diceoptions[getRandomIntInclusive(interaction.options.getInteger('number')-1)]}`);
 		} catch (error) {
 			console.log(error);
 		}
