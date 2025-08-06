@@ -70,9 +70,6 @@ module.exports = {
       connection.subscribe(player)
       player.play(resource)
 			await interaction.reply({content:`message recieved`,flags:MessageFlags.Ephemeral});
-      player.on(AudioPlayerStatus.Idle, () =>{
-        player.stop();
-      });
 		} catch (error) {
 			console.log(error);
       interaction.reply("I want to kill myself");
@@ -97,3 +94,6 @@ async function textToSpeech(text, language, outputFile) {
   }
 }
 
+player.on(AudioPlayerStatus.Idle, () =>{
+  player.stop();
+});
