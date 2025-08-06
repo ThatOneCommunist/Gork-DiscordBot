@@ -426,6 +426,10 @@ module.exports.generalPrompt = [
 
     "Cracker Ahh meal https://tenor.com/view/tyler-the-creator-mayonags-tyler-the-creator-mayonags-gif-9524233832148386694",
 
-    "ITS FREE AWOOGA https://cdn.discordapp.com/emojis/1335814078781984788.webp?size=96"
+    "ITS FREE AWOOGA https://tenor.com/view/among-us-among-us-funny-among-porn-among-us-porn-cum-gif-20241052",
+
+    "HOT https://tenor.com/view/mater-desperate-thirst-slurp-waterfall-gif-10548281902598490235",
+
+    "Im sorry for my creation https://tenor.com/view/javascript-coincidence-gif-5082471372829626219"
     
 ];

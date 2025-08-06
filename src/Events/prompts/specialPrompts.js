@@ -67,7 +67,9 @@ module.exports.specialPrompts = [
     // Dave and Busters
     "https://cdn.discordapp.com/attachments/986773996014043147/989560481071124580/trim.F93CB43A-24C8-443E-B89F-583E55D93650.mov?ex=6883aa03&is=68825883&hm=cb62003f62c6c7bd907ddf027afa5a44c70f4df213c15a42ab6549472894a1c0&",
     // Among Us
-    "Sussy Baka https://tenor.com/view/inspector-lunge-among-us-monster-naoki-urasawa-heinrich-lunge-gif-16546145040661683494"
+    "Sussy Baka https://tenor.com/view/inspector-lunge-among-us-monster-naoki-urasawa-heinrich-lunge-gif-16546145040661683494",
+    // Stanford Pines
+    "BUTTER https://tenor.com/view/stan-grunkle-stan-gravity-falls-lobotomy-fire-optic-cable-core-gif-11233473407792412738"
 ]
 
 module.exports.triggers = [
@@ -84,6 +86,7 @@ module.exports.triggers = [
     "vaporeon",
     "angry bird",
     "dave and busters",
-    "sus"
+    "sus",
+    "my exwife still misses me"
 ]
 

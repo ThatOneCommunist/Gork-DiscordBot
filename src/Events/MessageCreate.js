@@ -18,9 +18,9 @@ function MessageCreate(msg){
         (msg.content.toLowerCase().includes(`${botId} is this false`)) :
             msg.reply(questionprompts[getRandomIntInclusive(questionprompts.length)]);
             break;
-        // WORDLE BOT TODO: ADD A REGEX DOES NOT WORK
+        // WORDLE BOT
         case(msg.content.includes(botId) && msg.content.toLowerCase().includes('wordle')):
-            let wordInt = msg.content.replace(/[^1-6]/gis ,"");// Removes anything thats not a number
+            let wordInt = `${msg.content.replace(/[^0-9]/gis ,"")}`;// Removes anything thats not a number
             Wordle(wordInt.replace(client.user.id,''),msg, userId);// Removes Gorks ID
             break;
         // Have @GORK above this case
@@ -73,6 +73,12 @@ function Wordle(int,msg, userId){
     }
 }
 
+function SpecialRequest(msg){
+    if(msg.guildId === '883729027783872542' && msg.channelId === '883729027783872544'){
+        msg.react('🍊');
+    }
+}
+
 // Searches if the message contains the trigger 
 function SpecialCaseSearch(trigger,prompt,msg){
     for (let i = 0; i<trigger.length; i++){
@@ -83,5 +89,6 @@ function SpecialCaseSearch(trigger,prompt,msg){
 }
 
 module.exports = {
-    MessageCreate
+    MessageCreate,
+    SpecialRequest
 }

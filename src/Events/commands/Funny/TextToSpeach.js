@@ -1,19 +1,12 @@
 const { SlashCommandBuilder, MessageFlags } = require('discord.js');
 const fs = require('fs')
-const { AudioPlayer, createAudioPlayer, NoSubscriberBehavior, createAudioResource, AudioPlayerStatus } = require('@discordjs/voice');
+const { createAudioResource, AudioPlayerStatus } = require('@discordjs/voice');
 const { joinVoiceChannel } = require('@discordjs/voice');
 const { join } = require('path');
 const path = require('path');
 const tts = require('google-tts-api');
 const axios = require('axios');
-const { Language, LongLanguageArray } = require('../../../util/ISOLanguages');
-const { getRandomIntInclusive } = require('../../../util/randomValues');
-
-const player = createAudioPlayer({
-    behaviors:{
-        noSubscriber: NoSubscriberBehavior.Pause
-    }
-})
+const { player } = require('../../../util/player');
 
 const filepath = path.join(__dirname,'tts.mp3')
 
@@ -70,6 +63,10 @@ module.exports = {
       connection.subscribe(player)
       player.play(resource)
 			await interaction.reply({content:`message recieved`,flags:MessageFlags.Ephemeral});
+      player.on(AudioPlayerStatus.Idle, () =>{
+        connection.disconnect();
+      });
+
 		} catch (error) {
 			console.log(error);
       interaction.reply("I want to kill myself");
@@ -94,6 +91,3 @@ async function textToSpeech(text, language, outputFile) {
   }
 }
 
-player.on(AudioPlayerStatus.Idle, () =>{
-  player.stop();
-});
