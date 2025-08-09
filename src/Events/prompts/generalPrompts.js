@@ -430,6 +430,12 @@ module.exports.generalPrompt = [
 
     "HOT https://tenor.com/view/mater-desperate-thirst-slurp-waterfall-gif-10548281902598490235",
 
-    "Im sorry for my creation https://tenor.com/view/javascript-coincidence-gif-5082471372829626219"
+    "Im sorry for my creation https://tenor.com/view/javascript-coincidence-gif-5082471372829626219",
+
+    "Im going to push an old person down the stairs just to help them up and push them down again.",
+
+    "'I support Hezbollah' - A message paid for by the Gork 501c3 non profit",
+
+    "I should add more Evan hate"
     
 ];
