@@ -74,6 +74,8 @@ module.exports.specialPrompts = [
   "HAHAHAHAHAHAHAHA POOOOOOR 😂🫵",
   // Conquest
   "All the other Viltrumites are scared of me. Noone talks to me. Noone wants to be my friend-- They think I am unstable. They send me from planet to planet committing atrocities in their name. And as I get better at it, they fear me more and more. I am a victim of my own success. Conquest. I don't even get a real name, only a purpose. I am capable of so much more and noone sees it. Some days I feel so alone I could cry, but I don't. I never do. Because what would be the point? Not a single person in the entire universe would care. Take it to your grave.",
+  // JD Pon Don
+  "May Allah awaken the people and help them to see the evil-doings of Israel and the United States. - Donald J Trump",
 ];
 
 module.exports.triggers = [
@@ -94,4 +96,5 @@ module.exports.triggers = [
   "my ex-wife still misses me",
   "lost power",
   "i am so lonely",
+  "donald trump",
 ];

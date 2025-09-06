@@ -39,8 +39,12 @@ client.on(Events.InteractionCreate, (interaction) => {
 });
 
 client.on(Events.VoiceStateUpdate, (oldState, newState) => {
-  if (oldState.member.id === client.user.id && !newState.channel) {
-    killVC();
+  try {
+    if (oldState.member.id === client.user.id && !newState.channel) {
+      killVC();
+    }
+  } catch {
+    return;
   }
 });
 

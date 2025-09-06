@@ -141,5 +141,6 @@ async function start(resource) {
     // 1) The 'error' event has been emitted and should be handled
     // 2) 5 seconds have passed
     console.error("Error with playback", error);
+    return;
   }
 }
