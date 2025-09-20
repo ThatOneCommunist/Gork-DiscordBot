@@ -98,5 +98,5 @@ module.exports.diceoptions = [
   "https://tenor.com/view/scaramouche-wanderer-scara-genshin-impact-97-mental-illnesses-gif-12102018495927988707",
   "https://tenor.com/view/microsoft-windows98-bill-gates-windows98vaporwave-start-up-gif-14688825",
   "https://tenor.com/view/1-99-black-white-to-be-gif-12358730221963245425",
-  "🫃",
+  "🫃"
 ];

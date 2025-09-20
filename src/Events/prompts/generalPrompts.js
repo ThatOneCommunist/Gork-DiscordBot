@@ -425,4 +425,7 @@ module.exports.generalPrompt = [
   "I should add more Evan hate",
 
   "Your willy is rubbish :eggplant:",
+
+  "Who Jacken their box or smt uh uh uh uh uh uh ... gay sex"
 ];
+// Leave last message with no comma
