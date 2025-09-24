@@ -17,7 +17,7 @@ function MessageCreate(msg) {
         msg.content.toLowerCase().includes(`${botId} is this fake`) ||
         msg.content.toLowerCase().includes(`${botId} is this false`):
         msg.reply(
-          questionprompts[getRandomIntInclusive(questionprompts.length)]
+          questionprompts[getRandomIntInclusive(questionprompts.length-1)]
         );
         break;
       // WORDLE BOT
@@ -28,7 +28,7 @@ function MessageCreate(msg) {
         break;
       // Have @GORK above this case
       case msg.content.includes(botId):
-        msg.reply(generalPrompt[getRandomIntInclusive(generalPrompt.length)]);
+        msg.reply(generalPrompt[getRandomIntInclusive(generalPrompt.length-1)]);
         break;
       // GORK MISPELL
       case msg.content.includes("@hork") || msg.content.includes("@grok"):

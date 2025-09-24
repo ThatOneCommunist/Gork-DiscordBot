@@ -426,6 +426,8 @@ module.exports.generalPrompt = [
 
   "Your willy is rubbish :eggplant:",
 
-  "Who Jacken their box or smt uh uh uh uh uh uh ... gay sex"
+  "Who Jacken their box or smt uh uh uh uh uh uh ... gay sex",
+
+  "I am the rare YOGURT MALE (my pants just so happen to fall down by schools) https://www.youtube.com/watch?v=eTE-gFPsTgw"
 ];
 // Leave last message with no comma
