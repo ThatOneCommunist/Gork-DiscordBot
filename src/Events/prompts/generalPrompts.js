@@ -287,8 +287,6 @@ module.exports.generalPrompt = [
 
   ":hot_face: :hot_face: :hot_face: https://cdn.discordapp.com/attachments/1319845797713412159/1342310770058334248/IMG_3015.png?ex=6877ac92&is=68765b12&hm=1591f3c3720d28103ec5af152ba9524e0ea378d0f723c608b04c30648847d671&",
 
-  "https://tenor.com/view/dakellefultz-magic-gif-19356248",
-
   "https://cdn.discordapp.com/attachments/1320573614558285895/1347433892147363880/caption.png?ex=6877dad9&is=68768959&hm=4ef687dd18c0d3caf8e777ca82ec4e33a616e3fc0889f53a81af612f7bb3ecfe& Me after shrooms",
 
   "https://superfuckingmario.com/doll.html what happened to mario",
@@ -428,6 +426,7 @@ module.exports.generalPrompt = [
 
   "Who Jacken their box or smt uh uh uh uh uh uh ... gay sex",
 
-  "I am the rare YOGURT MALE (my pants just so happen to fall down by schools) https://www.youtube.com/watch?v=eTE-gFPsTgw"
+  "I am the rare YOGURT MALE (my pants just so happen to fall down by schools) https://www.youtube.com/watch?v=eTE-gFPsTgw",
+
+  "I was the ICE shooter",
 ];
-// Leave last message with no comma

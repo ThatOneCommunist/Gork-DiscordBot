@@ -17,7 +17,7 @@ function MessageCreate(msg) {
         msg.content.toLowerCase().includes(`${botId} is this fake`) ||
         msg.content.toLowerCase().includes(`${botId} is this false`):
         msg.reply(
-          questionprompts[getRandomIntInclusive(questionprompts.length-1)]
+          questionprompts[getRandomIntInclusive(questionprompts.length - 1)]
         );
         break;
       // WORDLE BOT
@@ -28,21 +28,25 @@ function MessageCreate(msg) {
         break;
       // Have @GORK above this case
       case msg.content.includes(botId):
-        msg.reply(generalPrompt[getRandomIntInclusive(generalPrompt.length-1)]);
+        msg.reply(
+          generalPrompt[getRandomIntInclusive(generalPrompt.length - 1)]
+        );
         break;
       // GORK MISPELL
-      case msg.content.includes("@hork") || msg.content.includes("@grok"):
+      case GorkMisspell(msg):
         msg.reply("SAY MY NAME CORRECTLY");
         msg.react("😡");
-        break;
-      // Special Case
-      case msg.author.id != client.user.id:
-        SpecialCaseSearch(triggers, specialPrompts, msg);
         break;
       // JAXSON SPAM
       case msg.author.id.includes("890678553304244264"):
         msg.author.send(`<@890678553304244264> ${jaxcount}`);
         jaxcount += 1;
+        break;
+      // Special Case
+      default:
+        if (!msg.author.id.includes(client.user.id)) {
+          SpecialCaseSearch(triggers, specialPrompts, msg);
+        }
         break;
     }
   } catch (error) {
@@ -103,6 +107,21 @@ function SpecialCaseSearch(trigger, prompt, msg) {
     if (msg.content.toLowerCase().includes(trigger[i])) {
       msg.reply(prompt[i]);
     }
+  }
+}
+
+// Need to add algo that checks for gork mispell variations
+function GorkMisspell(msg) {
+  if (!msg.content.includes("@")) {
+    return false;
+  } else if (
+    // returns where it is -1 if not included
+    msg.content.search(/@[a-z]ork/gis) > -1 ||
+    msg.content.search(/@[a-z]rok/gis) > -1
+  ) {
+    return true;
+  } else {
+    return false;
   }
 }
 
