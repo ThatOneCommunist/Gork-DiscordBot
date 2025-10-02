@@ -24,7 +24,10 @@ module.exports = {
         interaction.options.getString("message")
       );
       console.log(interaction.options.getUser("user").tag.toString());
-      interaction.reply({ content: `sent`, flags: MessageFlags.Ephemeral });
+      await interaction.reply({
+        content: `sent`,
+        flags: MessageFlags.Ephemeral,
+      });
     } catch (error) {
       console.log(error);
       interaction.reply({
