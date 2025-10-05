@@ -60,7 +60,7 @@ async function CommandDeploy(interaction) {
   }
 
   try {
-    command.execute(interaction);
+    await command.execute(interaction);
   } catch (error) {
     console.error(error);
     if (interaction.replied || interaction.deferred) {

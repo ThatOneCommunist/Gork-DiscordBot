@@ -103,9 +103,16 @@ function SpecialRequest(msg) {
 
 // Searches if the message contains the trigger
 function SpecialCaseSearch(trigger, prompt, msg) {
+  //TODO: REMOVE MORE EXTRA THINGS IN THE MESSAGE
   for (let i = 0; i < trigger.length; i++) {
     if (msg.content.toLowerCase().includes(trigger[i])) {
-      msg.reply(prompt[i]);
+      try {
+        msg.reply(prompt[i]);
+        return;
+      } catch (error) {
+        console.error(error);
+        return;
+      }
     }
   }
 }
