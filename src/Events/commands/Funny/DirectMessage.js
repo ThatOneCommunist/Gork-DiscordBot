@@ -30,7 +30,7 @@ module.exports = {
       });
     } catch (error) {
       console.log(error);
-      interaction.reply({
+      await interaction.reply({
         content: "Did not send :(",
         flags: MessageFlags.Ephemeral,
       });

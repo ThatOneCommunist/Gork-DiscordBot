@@ -1,6 +1,6 @@
 const { client } = require("../util/client.js");
 const { botID, token } = require("../util/config.json");
-const { REST, Routes, Collection } = require("discord.js");
+const { REST, Routes, Collection, MessageFlags } = require("discord.js");
 const fs = require("node:fs");
 const path = require("node:path");
 
@@ -50,10 +50,10 @@ const rest = new REST().setToken(token);
   }
 })();
 
-function CommandDeploy(interaction) {
+async function CommandDeploy(interaction) {
   if (!interaction.isChatInputCommand()) return;
 
-  const command = client.commands.get(interaction.commandName);
+  const command = await client.commands.get(interaction.commandName);
   if (!command) {
     console.error(`No command matching ${interaction.commandName} was found.`);
     return;

@@ -333,8 +333,6 @@ module.exports.generalPrompt = [
 
   "<@626531197484269578> literally you :nerd: ::point_up: ",
 
-  "GIVE ME DEV IDEAS",
-
   "Use '/jaxson' for a great time",
 
   "Erm What the Skibidi",
@@ -420,8 +418,6 @@ module.exports.generalPrompt = [
 
   "'I support Hezbollah' - A message paid for by the Gork 501c3 non profit",
 
-  "I should add more Evan hate",
-
   "Your willy is rubbish :eggplant:",
 
   "Who Jacken their box or smt uh uh uh uh uh uh ... gay sex",
@@ -429,4 +425,18 @@ module.exports.generalPrompt = [
   "I am the rare YOGURT MALE (my pants just so happen to fall down by schools) https://www.youtube.com/watch?v=eTE-gFPsTgw",
 
   "I was the ICE shooter",
+
+  "We should pave the everglades for the most beutiful Walmart Parking lot",
+
+  "Time out <@663106262359080971> for 5 mins",
+
+  "I don't believe in a retirement age",
+
+  "#2 trilobite fan",
+
+  "gorefield https://cdn.discordapp.com/attachments/1394019812015079495/1424241610115256440/image.png?ex=68e33bdc&is=68e1ea5c&hm=9071a501016e9a8f32b72cfa8e6566a91570fc9be20c68823fddd18ab4da6184&",
+
+  "<@890678553304244264> funny lookin",
+
+  "Nothing Happened on july 28th 2024",
 ];

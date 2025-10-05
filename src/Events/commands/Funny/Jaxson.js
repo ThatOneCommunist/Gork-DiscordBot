@@ -11,13 +11,12 @@ module.exports = {
         "890678553304244264",
         "What are you passionate about?"
       );
-      interaction.reply({
+      await interaction.reply({
         content: `something happened`,
         flags: MessageFlags.Ephemeral,
       });
     } catch (error) {
-      console.log(error);
-      interaction.reply({
+      await interaction.reply({
         content: "Did not send :(",
         flags: MessageFlags.Ephemeral,
       });
