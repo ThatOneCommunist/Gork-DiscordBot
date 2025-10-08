@@ -1,2 +1,2 @@
 # Ignores the config file with token
-config.json
+*config.json
