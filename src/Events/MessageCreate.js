@@ -5,6 +5,7 @@ const {
   ORANGE_TXTCHANEL_ID,
 } = require("../util/constants.js");
 const { getRandomIntInclusive } = require("../util/randomValues.js");
+const { censorList } = require("./prompts/cesorList.js");
 const { generalPrompt } = require("./prompts/generalPrompts.js");
 const { questionprompts } = require("./prompts/questionPrompts.js");
 const { specialPrompts, triggers } = require("./prompts/specialPrompts.js");
@@ -17,16 +18,11 @@ function MessageCreate(msg) {
   var userId = `<@${msg.author.id}>`;
   try {
     switch (true) {
-      case msg.content.toLowerCase().includes("job"):
-        msg.reply("Your Language Disgusts me >:(");
-        if (msg.deletable) {
-          msg.delete();
-        }
+      case CensorCheck(msg):
+        Censor(msg);
+        break;
       // Question statement TODO: ADD MORE
-      case msg.content.toLowerCase().includes(botId) &&
-        (msg.content.toLowerCase().includes("fake") ||
-          msg.content.toLowerCase().includes("false") ||
-          msg.content.toLowerCase().includes("true")):
+      case FactCheck(msg, botId):
         msg.reply(
           questionprompts[getRandomIntInclusive(questionprompts.length - 1)]
         );
@@ -63,6 +59,15 @@ function MessageCreate(msg) {
   } catch (error) {
     console.log(error);
   }
+}
+
+function FactCheck(msg, botId) {
+  return (
+    msg.content.toLowerCase().includes(botId) &&
+    (msg.content.toLowerCase().includes("fake") ||
+      msg.content.toLowerCase().includes("false") ||
+      msg.content.toLowerCase().includes("true"))
+  );
 }
 
 function Wordle(int, msg, userId) {
@@ -141,6 +146,23 @@ function GorkMisspell(msg) {
   } else {
     return false;
   }
+}
+
+function CensorCheck(msg) {
+  for (word of censorList) {
+    if (msg.content.includes(word)) {
+      return true;
+    }
+  }
+  return false;
+}
+
+async function Censor(msg) {
+  await msg.reply("Your Language Disgusts me >:(");
+  if (msg.deletable) {
+    msg.delete();
+  }
+  return;
 }
 
 module.exports = {
