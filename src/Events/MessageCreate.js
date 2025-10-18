@@ -1,4 +1,9 @@
 const { client } = require("../util/client.js");
+const {
+  JAX_ID,
+  ORANGE_SERVER_ID,
+  ORANGE_TXTCHANEL_ID,
+} = require("../util/constants.js");
 const { getRandomIntInclusive } = require("../util/randomValues.js");
 const { generalPrompt } = require("./prompts/generalPrompts.js");
 const { questionprompts } = require("./prompts/questionPrompts.js");
@@ -13,9 +18,10 @@ function MessageCreate(msg) {
   try {
     switch (true) {
       // Question statement TODO: ADD MORE
-      case msg.content.toLowerCase().includes(`${botId} is this true`) ||
-        msg.content.toLowerCase().includes(`${botId} is this fake`) ||
-        msg.content.toLowerCase().includes(`${botId} is this false`):
+      case msg.content.toLowerCase().includes(botId) &&
+        (msg.content.toLowerCase().includes("fake") ||
+          msg.content.toLowerCase().includes("false") ||
+          msg.content.toLowerCase().includes("true")):
         msg.reply(
           questionprompts[getRandomIntInclusive(questionprompts.length - 1)]
         );
@@ -37,17 +43,17 @@ function MessageCreate(msg) {
         msg.reply("SAY MY NAME CORRECTLY");
         msg.react("😡");
         break;
-      // JAXSON SPAM
-      case msg.author.id.includes("890678553304244264"):
-        msg.author.send(`<@890678553304244264> ${jaxcount}`);
-        jaxcount += 1;
-        break;
       // Special Case
       default:
         if (!msg.author.id.includes(client.user.id)) {
           SpecialCaseSearch(triggers, specialPrompts, msg);
         }
         break;
+    }
+    // JAXSON SPAM
+    if (msg.author.id.includes(JAX_ID)) {
+      msg.author.send(`<@${JAX_ID}> ${jaxcount}`);
+      jaxcount += 1;
     }
   } catch (error) {
     console.log(error);
@@ -94,8 +100,8 @@ function Wordle(int, msg, userId) {
 
 function SpecialRequest(msg) {
   if (
-    msg.guildId === "883729027783872542" &&
-    msg.channelId === "883729027783872544"
+    msg.guildId === ORANGE_SERVER_ID &&
+    msg.channelId === ORANGE_TXTCHANEL_ID
   ) {
     msg.react("🍊");
   }
@@ -122,7 +128,7 @@ function GorkMisspell(msg) {
   if (!msg.content.includes("@")) {
     return false;
   } else if (
-    // returns where it is -1 if not included
+    // returns -1 if not included
     msg.content.search(/@[a-z]ork/gis) > -1 ||
     msg.content.search(/@[a-z]rok/gis) > -1
   ) {

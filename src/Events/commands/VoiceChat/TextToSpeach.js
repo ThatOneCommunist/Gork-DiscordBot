@@ -14,6 +14,7 @@ const { player } = require("../../../util/player");
 const { console } = require("inspector");
 const { setTimeout } = require("timers/promises");
 const mp3Duration = require("mp3-duration");
+const { ADDED_TIME } = require("../../../util/constants");
 
 const filepath = path.join(__dirname, "tts_mp3");
 var durations = 0;
@@ -96,8 +97,8 @@ module.exports = {
           await mp3Duration(
             path.join(filepath, `tts${i}.mp3`),
             async (err, duration) => {
-              if (err) return console.log(err.message);
-              durations = duration + 0.5;
+              if (err) return console.error(err.message);
+              durations = duration + ADDED_TIME;
             }
           );
           await setTimeout(parseInt(durations) * 1000);

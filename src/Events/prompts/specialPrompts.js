@@ -78,6 +78,8 @@ module.exports.specialPrompts = [
   '"May Allah awaken the people and help them to see the evil-doings of Israel and the United States." - Donald J Trump',
   // Horse Race Tests
   "https://tenor.com/view/horse-race-tests-jovial-merryment-yellow-gif-12096895532296602711",
+  // Bill Clinton
+  "I Did Not Have Sexual Relations With That Woman",
 ];
 
 module.exports.triggers = [
@@ -100,4 +102,5 @@ module.exports.triggers = [
   "i am so lonely",
   "trump",
   "jovial merryment",
+  "bill clinton",
 ];

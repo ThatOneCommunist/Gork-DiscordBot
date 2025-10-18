@@ -443,4 +443,6 @@ module.exports.generalPrompt = [
   "https://tenor.com/view/spongebob-backshots-gif-17465228207125484588 me to you ;) (the spirit of spongebob is in us all)",
 
   "Unlike some people I ain't no kid diddler <@663106262359080971>",
+
+  "Jerks it a little",
 ];
