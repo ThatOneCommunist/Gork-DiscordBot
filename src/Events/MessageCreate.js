@@ -17,6 +17,11 @@ function MessageCreate(msg) {
   var userId = `<@${msg.author.id}>`;
   try {
     switch (true) {
+      case msg.content.toLowerCase().includes("job"):
+        msg.reply("Your Language Disgusts me >:(");
+        if (msg.deletable) {
+          msg.delete();
+        }
       // Question statement TODO: ADD MORE
       case msg.content.toLowerCase().includes(botId) &&
         (msg.content.toLowerCase().includes("fake") ||
