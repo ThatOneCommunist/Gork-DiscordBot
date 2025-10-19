@@ -24,7 +24,9 @@ client.on(Events.MessageCreate, async (msg) => {
     msg.author.username
   } ${msg.content}`;
   if (msg.channelId != DM_CHANNEL_ID) {
-    client.users.send(DM_USER, message); // Logs to my DM
+    if (!msg.inGuild()) {
+      client.users.send(DM_USER, message);
+    } // Logs to my DM
     console.log(message);
   }
   MessageCreate(msg);
