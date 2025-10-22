@@ -11,11 +11,10 @@ const { questionprompts } = require("./prompts/questionPrompts.js");
 const { specialPrompts, triggers } = require("./prompts/specialPrompts.js");
 
 var jaxcount = 1;
+const botId = `<@${client.user.id}>`; // Easy way to check for if Gork is @ed
 
-// random message if he is @ed and asked is this true
 function MessageCreate(msg) {
-  var botId = `<@${client.user.id}>`; // Easy way to check for if Gork is @ed
-  var userId = `<@${msg.author.id}>`;
+  const userId = `<@${msg.author.id}>`;
   try {
     switch (true) {
       case CensorCheck(msg):
@@ -31,7 +30,7 @@ function MessageCreate(msg) {
       case msg.content.includes(botId) &&
         msg.content.toLowerCase().includes("wordle"):
         let wordInt = `${msg.content.replace(/[^0-9]/gis, "")}`; // Removes anything thats not a number
-        Wordle(wordInt.replace(client.user.id, ""), msg, userId); // Removes Gorks ID
+        Wordle(wordInt.replace(botId, ""), msg, userId); // Removes Gorks ID
         break;
       // Have @GORK above this case
       case msg.content.includes(botId):
@@ -46,7 +45,7 @@ function MessageCreate(msg) {
         break;
       // Special Case
       default:
-        if (!msg.author.id.includes(client.user.id)) {
+        if (!msg.author.id.includes(botId)) {
           SpecialCaseSearch(triggers, specialPrompts, msg);
         }
         break;
@@ -133,7 +132,6 @@ function SpecialCaseSearch(trigger, prompt, msg) {
   }
 }
 
-// Need to add algo that checks for gork mispell variations
 function GorkMisspell(msg) {
   if (!msg.content.includes("@")) {
     return false;
@@ -149,6 +147,7 @@ function GorkMisspell(msg) {
 }
 
 function CensorCheck(msg) {
+  if (msg.author.id === botId) return false;
   for (word of censorList) {
     if (msg.content.includes(word)) {
       return true;
@@ -158,7 +157,9 @@ function CensorCheck(msg) {
 }
 
 async function Censor(msg) {
-  await msg.reply("Your Language Disgusts me >:(");
+  await msg.reply(
+    `How dare you your language disgusts me!😡\n\nRead at your own risk ||${msg.content}||`
+  );
   if (msg.deletable) {
     msg.delete();
   }
