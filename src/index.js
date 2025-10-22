@@ -30,7 +30,6 @@ client.on(Events.MessageCreate, async (msg) => {
     console.log(message);
   }
   MessageCreate(msg);
-  SpecialRequest(msg);
 });
 client.on(Events.InteractionCreate, async (interaction) => {
   CommandDeploy(interaction);

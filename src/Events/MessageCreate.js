@@ -16,6 +16,7 @@ const botId = `<@${client.user.id}>`; // Easy way to check for if Gork is @ed
 function MessageCreate(msg) {
   const userId = `<@${msg.author.id}>`;
   try {
+    SpecialRequest(msg);
     switch (true) {
       case CensorCheck(msg):
         Censor(msg);
@@ -174,5 +175,4 @@ async function Censor(msg) {
 
 module.exports = {
   MessageCreate,
-  SpecialRequest,
 };
