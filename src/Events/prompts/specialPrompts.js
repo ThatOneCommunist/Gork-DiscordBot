@@ -97,7 +97,7 @@ module.exports.triggers = [
   "angry bird",
   "dave and busters",
   "sus",
-  "my ex-wife still misses me",
+  "my exwife still misses me",
   "lost power",
   "i am so lonely",
   "trump",

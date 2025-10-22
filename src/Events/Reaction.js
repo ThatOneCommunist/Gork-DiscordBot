@@ -42,6 +42,12 @@ function MessageReaction(react) {
         "https://tenor.com/view/asgore-run-over-triki-troy-deltarune-gif-17995477417765303444"
       );
       return;
+    case "🚡":
+      react.message.react("🫃");
+      return;
+    case "🚠":
+      react.message.react("🫃");
+      return;
   }
 }
 

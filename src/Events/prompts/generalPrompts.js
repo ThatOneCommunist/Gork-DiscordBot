@@ -56,18 +56,17 @@ module.exports.generalPrompt = [
 
   "🐺",
 
-  "SyntaxError: missing ) after argument list" +
-    "at wrapSafe (node:internal/modules/cjs/loader:1624:18)" +
-    "at Module._compile (node:internal/modules/cjs/loader:1666:20)" +
-    "at Object..js (node:internal/modules/cjs/loader:1824:10)" +
-    "at Module.load (node:internal/modules/cjs/loader:1427:32)" +
-    "at Module._load (node:internal/modules/cjs/loader:1250:12)" +
-    "at TracingChannel.traceSync (node:diagnostics_channel:322:14)" +
-    "at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)" +
-    "at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:152:5)" +
-    "at node:internal/main/run_main_module:33:47" +
-    "Node.js v24.4.0" +
-    "[nodemon] app crashed - waiting for file changes before starting...",
+  `TypeError: Cannot destructure property 'MessageCreate' of 'require(...).default' as it is undefined.` +
+    `  at Object.<anonymous> ` +
+    `  at Module._compile (node:internal/modules/cjs/loader:1692:14)` +
+    `  at Object..js (node:internal/modules/cjs/loader:1824:10)` +
+    `  at Module.load (node:internal/modules/cjs/loader:1427:32)` +
+    `  at Module._load (node:internal/modules/cjs/loader:1250:12)` +
+    `  at TracingChannel.traceSync (node:diagnostics_channel:322:14)` +
+    `  at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)` +
+    `  at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:152:5)` +
+    `  at node:internal/main/run_main_module:33:47` +
+    `Node.js v24.4.0[nodemon] app crashed - waiting for file changes before starting...,`,
 
   "<@663106262359080971> likes kids",
 
@@ -445,4 +444,8 @@ module.exports.generalPrompt = [
   "Unlike some people I ain't no kid diddler <@663106262359080971>",
 
   "Jerks it a little",
+
+  "nightmare blunt rotation https://cdn.discordapp.com/attachments/1378934121450963045/1430675688666435825/iu.png?ex=68faa410&is=68f95290&hm=daff46142363ea3ebb8a22ae3b1e649da4aafe3b0945b1ee0ca735bfb17b2d11&",
+
+  "🚠🚡👲",
 ];

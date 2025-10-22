@@ -1,2 +1,3 @@
 # Ignores the config file with token
 util/*.json
+src/util/config.json
