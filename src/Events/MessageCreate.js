@@ -80,9 +80,15 @@ function Wordle(int, msg, userId) {
       );
       break;
     case "3":
-      msg.reply(
-        `Don't Hate on${userId}https://tenor.com/view/wordle-wordle-in3-wordle-in-three-worlde-easy-wordle-win-gif-24560879`
-      );
+      if (msg.author.id === "663106262359080971") {
+        msg.reply(
+          `Hate on${userId}https://tenor.com/view/wordle-wordle-in3-wordle-in-three-worlde-easy-wordle-win-gif-24560879`
+        );
+      } else {
+        msg.reply(
+          `Don't Hate on${userId}https://tenor.com/view/wordle-wordle-in3-wordle-in-three-worlde-easy-wordle-win-gif-24560879`
+        );
+      }
       break;
     case "4":
       msg.reply(
