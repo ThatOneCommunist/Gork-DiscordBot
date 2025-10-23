@@ -5,7 +5,10 @@ function Wordle(int, msg, userId) {
     case "2":
       return `${userId}" Thats How we do https://tenor.com/view/wordle-wordle-win-wordle-in2-wordle-in-two-wordle-easy-gif-24546309`;
     case "3":
-      if (msg.author.id === "663106262359080971") {
+      if (
+        msg.author.id.includes("663106262359080971") ||
+        msg.author.id.includes("626531197484269578")
+      ) {
         return `Hate on${userId}https://tenor.com/view/wordle-wordle-in3-wordle-in-three-worlde-easy-wordle-win-gif-24560879`;
       } else {
         return `Don't Hate on${userId}https://tenor.com/view/wordle-wordle-in3-wordle-in-three-worlde-easy-wordle-win-gif-24560879`;

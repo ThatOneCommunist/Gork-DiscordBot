@@ -80,11 +80,13 @@ module.exports.specialPrompts = [
   "https://tenor.com/view/horse-race-tests-jovial-merryment-yellow-gif-12096895532296602711",
   // Bill Clinton
   "I Did Not Have Sexual Relations With That Woman",
+  // Evan Hate
+  "https://tenor.com/view/hate-hate-drive-activated-activate-mad-hater-gif-23479256",
 ];
 
 module.exports.triggers = [
   "what did i sacrifice",
-  "i love tyson",
+  "love tyson",
   "miku",
   "larry",
   "jfk",
@@ -103,4 +105,5 @@ module.exports.triggers = [
   "trump",
   "jovial merryment",
   "bill clinton",
+  "hate evan",
 ];
