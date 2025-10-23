@@ -27,7 +27,8 @@ async function MessageCreate(msg) {
     SpecialRequest(msg);
     switch (true) {
       case CensorCheck(msg):
-        Censor(msg);
+        await msg.reply(CensorReply(msg.content));
+        CensorDelete(msg);
         return;
       // Question statement TODO: ADD MORE
       case FactCheck(msg, botId):
@@ -36,8 +37,7 @@ async function MessageCreate(msg) {
         );
         return;
       // WORDLE BOT
-      case msg.content.includes(botId) &&
-        msg.content.toLowerCase().includes("wordle"):
+      case WordleCheck(msg, botId):
         let wordInt = `${msg.content.replace(/[^0-9]/gis, "")}`; // Removes anything thats not a number
         msg.reply(Wordle(wordInt.replace(client.user.id, ""), msg, userId)); // Removes Gorks ID
         return;
@@ -64,6 +64,12 @@ async function MessageCreate(msg) {
       `Something went wrong in the message creation section ${error}`
     );
   }
+}
+
+function WordleCheck(msg, botId) {
+  return (
+    msg.content.includes(botId) && msg.content.toLowerCase().includes("wordle")
+  );
 }
 
 function FactCheck(msg, botId) {
@@ -123,15 +129,16 @@ function CensorCheck(msg) {
   return false;
 }
 
-async function Censor(msg) {
-  await msg.reply(
-    `How dare you your language disgusts me!😡\n\nRead at your own risk: ||${msg.content}||`
-  );
+async function CensorReply(msg) {
+  return `How dare you your language disgusts me!😡\n\nRead at your own risk: ||${msg}||`;
+}
+function CensorDelete(msg) {
   if (msg.deletable) {
     msg.delete();
   }
   return;
 }
+
 // Not Implemented
 function CleanMessage(msg) {
   var cleanMessage = msg.content.toLowerCase();
