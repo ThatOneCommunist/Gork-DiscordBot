@@ -112,10 +112,12 @@ function GorkMisspell(msg) {
 }
 
 function CensorCheck(msg) {
-  if (msg.author.id === client.user.id) return false;
+  if (msg.author.id.includes(client.user.id)) {
+    return false;
+  }
   for (word of censorList) {
     if (msg.content.includes(word)) {
-      return word;
+      return true;
     }
   }
   return false;
@@ -123,7 +125,7 @@ function CensorCheck(msg) {
 
 async function Censor(msg) {
   await msg.reply(
-    `How dare you your language disgusts me!😡\n\nRead at your own risk ||${msg.content}||`
+    `How dare you your language disgusts me!😡\n\nRead at your own risk: ||${msg.content}||`
   );
   if (msg.deletable) {
     msg.delete();
