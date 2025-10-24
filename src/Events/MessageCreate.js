@@ -54,7 +54,7 @@ async function MessageCreate(msg) {
         return;
       // Special Case
       default:
-        if (!msg.author.id.includes(botId)) {
+        if (!msg.author.id.includes(client.user.id)) {
           SpecialCaseSearch(triggers, specialPrompts, msg);
         }
         return;
