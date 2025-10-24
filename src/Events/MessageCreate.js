@@ -130,7 +130,7 @@ function CensorCheck(msg) {
 }
 
 async function CensorReply(msg) {
-  return `How dare you <@${msg.author.id}, your language disgusts me!😡\n\nRead at your own risk: ||${msg.content}||`;
+  return `How dare you <@${msg.author.id}>, your language disgusts me!😡\n\nRead at your own risk: ||${msg.content}||`;
 }
 function CensorDelete(msg) {
   if (msg.deletable) {
