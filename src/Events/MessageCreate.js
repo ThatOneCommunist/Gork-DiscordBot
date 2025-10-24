@@ -27,7 +27,7 @@ async function MessageCreate(msg) {
     SpecialRequest(msg);
     switch (true) {
       case CensorCheck(msg):
-        await msg.reply(CensorReply(msg.content));
+        await msg.reply(CensorReply(msg));
         CensorDelete(msg);
         return;
       // Question statement TODO: ADD MORE
@@ -130,7 +130,7 @@ function CensorCheck(msg) {
 }
 
 async function CensorReply(msg) {
-  return `How dare you your language disgusts me!😡\n\nRead at your own risk: ||${msg}||`;
+  return `How dare you <@${msg.author.id}, your language disgusts me!😡\n\nRead at your own risk: ||${msg.content}||`;
 }
 function CensorDelete(msg) {
   if (msg.deletable) {
