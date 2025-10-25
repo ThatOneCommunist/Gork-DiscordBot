@@ -103,6 +103,7 @@ module.exports = {
           );
           await setTimeout(parseInt(durations) * 1000);
         } catch (err) {
+          console.error(`Something went wrong in Voicechat: ${err}`);
           return;
         }
       }

@@ -1,12 +1,11 @@
 const { token } = require("./util/config.json");
 const { client } = require("./util/client.js");
-const { Events } = require("discord.js");
+const { Events, Attachment, AttachmentBuilder } = require("discord.js");
 const { MessageReaction } = require("./Events/Reaction.js");
 const { Ready } = require("./Events/Ready.js");
 const { MessageCreate, SpecialRequest } = require("./Events/MessageCreate.js");
 const { CommandDeploy } = require("./Events/Command.js");
 const { killVC } = require("./Events/commands/VoiceChat/killVC.js");
-const { player } = require("./util/player.js");
 const { DM_USER, DM_CHANNEL_ID } = require("./util/constants.js");
 
 global.self = global;

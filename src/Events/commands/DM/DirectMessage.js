@@ -29,8 +29,8 @@ module.exports = {
         flags: MessageFlags.Ephemeral,
       });
     } catch (error) {
-      console.log(error);
-      await interaction.reply({
+      console.error(`Something went wrong in Direct Message: ${error}`);
+      interaction.reply({
         content: "Did not send :(",
         flags: MessageFlags.Ephemeral,
       });

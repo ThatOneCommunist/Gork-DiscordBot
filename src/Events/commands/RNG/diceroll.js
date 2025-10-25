@@ -24,7 +24,7 @@ module.exports = {
         }`
       );
     } catch (error) {
-      console.log(error);
+      console.error(`Something went wrong in diceroll: ${error}`);
     }
   },
 };

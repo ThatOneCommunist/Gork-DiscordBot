@@ -9,7 +9,7 @@ module.exports = {
     try {
       await interaction.reply(`Pong! ${client.ws.ping}ms`);
     } catch (error) {
-      console.log(error);
+      console.error(`Something went wrong in ping: ${error}`);
     }
   },
 };

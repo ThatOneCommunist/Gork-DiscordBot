@@ -17,10 +17,10 @@ async function MessageCreate(msg) {
   // Only reply in this function
   var botId = `<@${client.user.id}>`; // Easy way to check for if Gork is @ed
   var cleanMessage = CleanMessage(msg); //gives promise not string
-  var userId = `<@${msg.author.id}>`;
+  var userId = `${msg.author.id}`;
   try {
     // JAXSON SPAM
-    if (msg.author.id.includes(JAX_ID)) {
+    if (userId.includes(JAX_ID)) {
       msg.author.send(`<@${JAX_ID}> ${jaxcount}`);
       jaxcount += 1;
     }
@@ -39,7 +39,7 @@ async function MessageCreate(msg) {
       // WORDLE BOT
       case WordleCheck(msg, botId):
         let wordInt = `${msg.content.replace(/[^0-9]/gis, "")}`; // Removes anything thats not a number
-        msg.reply(Wordle(wordInt.replace(client.user.id, ""), msg, userId)); // Removes Gorks ID
+        msg.reply(Wordle(wordInt.replace(client.user.id, ""), userId)); // Removes Gorks ID
         return;
       // Have @GORK above this case
       case msg.content.includes(botId):

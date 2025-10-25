@@ -11,9 +11,9 @@ module.exports = {
     .setDescription("Flip a coin heads or tails."),
   async execute(interaction) {
     try {
-      await interaction.reply(coin[getRandomIntInclusive(coin.length) -1 ]);
+      await interaction.reply(coin[getRandomIntInclusive(coin.length) - 1]);
     } catch (error) {
-      console.log(error);
+      console.error(`Something went wrong in coinflip: ${error}`);
     }
   },
 };
