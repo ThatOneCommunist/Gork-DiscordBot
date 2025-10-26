@@ -18,7 +18,7 @@ var jaxcount = 1;
 async function MessageCreate(msg) {
   // Only reply in this function
   var botId = `<@${client.user.id}>`; // Easy way to check for if Gork is @ed
-  var cleanMessage = CleanMessage(msg); //gives promise not string
+  var cleanMessage = msg.content.toLowerCase(); //gives promise not string
   var userId = `${msg.author.id}`;
   try {
     // JAXSON SPAM
