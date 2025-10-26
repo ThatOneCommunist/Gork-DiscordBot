@@ -1,6 +1,6 @@
 const { token } = require("./util/config.json");
 const { client } = require("./util/client.js");
-const { Events, Attachment, AttachmentBuilder } = require("discord.js");
+const { Events } = require("discord.js");
 const { MessageReaction } = require("./Events/Reaction.js");
 const { Ready } = require("./Events/Ready.js");
 const { MessageCreate, SpecialRequest } = require("./Events/MessageCreate.js");
@@ -19,14 +19,18 @@ client.on(Events.MessageReactionAdd, async (react) => {
   MessageReaction(react);
 });
 client.on(Events.MessageCreate, async (msg) => {
-  message = `${msg.createdAt.getHours()}:${msg.createdAt.getMinutes()} ${
-    msg.author.username
-  } ${msg.content}`;
-  if (msg.channelId != DM_CHANNEL_ID) {
-    if (!msg.inGuild()) {
-      client.users.send(DM_USER, message);
-    } // Logs to my DM
-    console.log(message);
+  try {
+    message = `${msg.createdAt.getHours()}:${msg.createdAt.getMinutes()} ${
+      msg.author.username
+    } ${msg.content}`;
+    if (msg.channelId != DM_CHANNEL_ID) {
+      if (!msg.inGuild()) {
+        client.users.send(DM_USER, message);
+      } // Logs to my DM
+      console.log(message);
+    }
+  } catch (error) {
+    console.error(`Error with logging: ${error}`);
   }
   MessageCreate(msg);
 });

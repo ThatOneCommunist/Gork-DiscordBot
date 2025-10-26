@@ -59,7 +59,14 @@ async function MessageCreate(msg) {
       // Special Case
       default:
         if (!msg.author.id.includes(client.user.id)) {
-          msg.reply(SpecialCaseSearch(triggers, specialPrompts, cleanMessage));
+          let prompt = SpecialCaseSearch(
+            triggers,
+            specialPrompts,
+            cleanMessage
+          );
+          if (prompt) {
+            msg.reply(prompt);
+          }
         }
         return;
     }
@@ -86,6 +93,7 @@ function SpecialCaseSearch(trigger, prompt, msg) {
       }
     }
   }
+  return null;
 }
 
 function CensorDelete(msg) {
