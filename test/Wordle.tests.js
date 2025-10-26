@@ -1,5 +1,5 @@
-import { Wordle } from "../src/util/Wordle.js";
-import { expect } from "chai";
+const { Wordle } = require("../src/util/MessageComponents/Wordle.js");
+const { expect } = require("chai");
 
 describe("Wordle function", function () {
   it("should say user cheated", function () {

@@ -23,5 +23,4 @@ function Wordle(int, userId) {
       return `I have been programed to say <@${userId}> failed in this instance https://tenor.com/view/wordle-wordle-challenging-wordle-fail-wordle-no-dictionary-wordle-hard-gif-24545672`;
   }
 }
-const _Wordle = Wordle;
-export { _Wordle as Wordle };
+module.exports = { Wordle };

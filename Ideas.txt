@@ -1,3 +1,0 @@
-/translate for mandarin and english translation
-/wire logs the voice channel to my dms
-better logging

@@ -1,3 +1,4 @@
+const { FactCheck } = require("../util/MessageComponents/FactCheck.js").default;
 const { client } = require("../util/client.js");
 const {
   JAX_ID,
@@ -5,11 +6,12 @@ const {
   ORANGE_TXTCHANEL_ID,
 } = require("../util/constants.js");
 const { getRandomIntInclusive } = require("../util/randomValues.js");
-const { censorList } = require("./prompts/cesorList.js");
 const { generalPrompt } = require("./prompts/generalPrompts.js");
 const { questionprompts } = require("./prompts/questionPrompts.js");
 const { specialPrompts, triggers } = require("./prompts/specialPrompts.js");
-const { Wordle } = require("../util/Wordle.js");
+const { Wordle } = require("../util/MessageComponents/Wordle.js");
+const { GorkMisspell } = require("../util/MessageComponents/GorkMisspell.js");
+const { CensorCheck } = require("../util/MessageComponents/CensorCheck.js");
 
 var jaxcount = 1;
 
@@ -26,18 +28,20 @@ async function MessageCreate(msg) {
     }
     SpecialRequest(msg);
     switch (true) {
-      case CensorCheck(msg):
-        await msg.reply(CensorReply(msg));
+      case CensorCheck(cleanMessage, userId, client.user.id):
+        await msg.reply(
+          `How dare you <@${userId}>, your language disgusts me!😡\n\nRead at your own risk: ||${msg.content}||`
+        );
         CensorDelete(msg);
         return;
       // Question statement TODO: ADD MORE
-      case FactCheck(msg, botId):
+      case FactCheck(cleanMessage, botId):
         msg.reply(
           questionprompts[getRandomIntInclusive(questionprompts.length - 1)]
         );
         return;
       // WORDLE BOT
-      case WordleCheck(msg, botId):
+      case WordleCheck(cleanMessage, botId):
         let wordInt = `${msg.content.replace(/[^0-9]/gis, "")}`; // Removes anything thats not a number
         msg.reply(Wordle(wordInt.replace(client.user.id, ""), userId)); // Removes Gorks ID
         return;
@@ -48,14 +52,14 @@ async function MessageCreate(msg) {
         );
         return;
       // GORK MISPELL
-      case GorkMisspell(msg):
+      case GorkMisspell(cleanMessage):
         msg.reply("SAY MY NAME CORRECTLY");
         msg.react("😡");
         return;
       // Special Case
       default:
         if (!msg.author.id.includes(client.user.id)) {
-          SpecialCaseSearch(triggers, specialPrompts, msg);
+          msg.reply(SpecialCaseSearch(triggers, specialPrompts, cleanMessage));
         }
         return;
     }
@@ -67,36 +71,15 @@ async function MessageCreate(msg) {
 }
 
 function WordleCheck(msg, botId) {
-  return (
-    msg.content.includes(botId) && msg.content.toLowerCase().includes("wordle")
-  );
-}
-
-function FactCheck(msg, botId) {
-  return (
-    msg.content.toLowerCase().includes(botId) &&
-    (msg.content.toLowerCase().includes("fake") ||
-      msg.content.toLowerCase().includes("false") ||
-      msg.content.toLowerCase().includes("true"))
-  );
-}
-
-function SpecialRequest(msg) {
-  if (
-    msg.guildId === ORANGE_SERVER_ID &&
-    msg.channelId === ORANGE_TXTCHANEL_ID
-  ) {
-    msg.react("🍊");
-  }
+  return msg.includes(botId) && msg.includes("wordle");
 }
 
 // Searches if the message contains the trigger
 function SpecialCaseSearch(trigger, prompt, msg) {
   for (let i = 0; i < trigger.length; i++) {
-    if (msg.content.toLowerCase().includes(trigger[i])) {
+    if (msg.includes(trigger[i])) {
       try {
-        msg.reply(prompt[i]);
-        return;
+        return prompt[i];
       } catch (error) {
         console.error(error);
         return;
@@ -105,33 +88,6 @@ function SpecialCaseSearch(trigger, prompt, msg) {
   }
 }
 
-function GorkMisspell(msg) {
-  if (
-    // returns -1 if not included
-    msg.content.search(/@[a-z]ork/gis) > -1 ||
-    msg.content.search(/@[a-z]rok/gis) > -1
-  ) {
-    return true;
-  } else {
-    return false;
-  }
-}
-
-function CensorCheck(msg) {
-  if (msg.author.id.includes(client.user.id)) {
-    return false;
-  }
-  for (word of censorList) {
-    if (msg.content.includes(word)) {
-      return true;
-    }
-  }
-  return false;
-}
-
-async function CensorReply(msg) {
-  return `How dare you <@${msg.author.id}>, your language disgusts me!😡\n\nRead at your own risk: ||${msg.content}||`;
-}
 function CensorDelete(msg) {
   if (msg.deletable) {
     msg.delete();
@@ -139,12 +95,20 @@ function CensorDelete(msg) {
   return;
 }
 
-// Not Implemented
+// Add more cleans
 function CleanMessage(msg) {
   var cleanMessage = msg.content.toLowerCase();
   return cleanMessage.replace(/['-_]/g, "");
 }
-
+// Not important enough to require any updates
+function SpecialRequest(msg) {
+  if (
+    msg.guildId === ORANGE_SERVER_ID &&
+    msg.channelId === ORANGE_TXTCHANEL_ID
+  ) {
+    msg.react("🍊");
+  }
+}
 module.exports = {
   MessageCreate,
 };
