@@ -1,4 +1,4 @@
-const { FactCheck } = require("../util/MessageComponents/FactCheck.js").default;
+const { FactCheck } = require("../util/MessageComponents/FactCheck.js");
 const { client } = require("../util/client.js");
 const {
   JAX_ID,
