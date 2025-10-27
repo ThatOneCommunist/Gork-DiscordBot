@@ -52,7 +52,7 @@ const rest = new REST().setToken(token);
 
 async function CommandDeploy(interaction) {
   if (!interaction.isChatInputCommand()) return;
-
+  console.log(`${interaction.user.tag} used ${interaction.commandName} `);
   const command = await client.commands.get(interaction.commandName);
   if (!command) {
     console.error(`No command matching ${interaction.commandName} was found.`);

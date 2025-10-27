@@ -1,4 +1,6 @@
-const { GorkMisspell } = require("../src/util/MessageComponents/GorkMisspell");
+const {
+  GorkMisspell,
+} = require("../src/util/MessageComponents/booleanChecks/GorkMisspell");
 const { expect } = require("chai");
 
 describe("GorkMisspell boolean function", function () {

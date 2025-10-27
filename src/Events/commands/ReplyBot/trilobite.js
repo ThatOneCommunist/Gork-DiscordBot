@@ -8,13 +8,14 @@ module.exports = {
     .setDescription("no description needed"),
   async execute(interaction) {
     try {
+      await interaction.deferReply();
       var number = getRandomIntInclusive(files.length);
       var file = new AttachmentBuilder(
         fs.readFileSync(`./src/util/trilobite/Trilobite${number}.webp`),
         { name: `Trilobite${number}.webp` }
       );
 
-      await interaction.reply({ content: `🦧`, files: [file] });
+      await interaction.followUp({ content: `🦧`, files: [file] });
     } catch (error) {
       console.error(`Something went wrong in trilobite${error}`);
     }

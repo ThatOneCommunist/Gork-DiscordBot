@@ -1,4 +1,6 @@
-const { CensorCheck } = require("../src/util/MessageComponents/CensorCheck");
+const {
+  CensorCheck,
+} = require("../src/util/MessageComponents/booleanChecks/CensorCheck");
 const { expect } = require("chai");
 const botID = "1393814433473757255";
 describe("Censor Check boolean function", function () {

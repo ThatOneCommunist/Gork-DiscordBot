@@ -19,18 +19,19 @@ module.exports = {
     ),
   async execute(interaction) {
     try {
+      await interaction.deferReply({ flags: MessageFlags.Ephemeral });
       await client.users.send(
         interaction.options.getUser("user").id.toString(),
         interaction.options.getString("message")
       );
       console.log(interaction.options.getUser("user").tag.toString());
-      await interaction.reply({
+      await interaction.followUp({
         content: `sent`,
         flags: MessageFlags.Ephemeral,
       });
     } catch (error) {
       console.error(`Something went wrong in Direct Message: ${error}`);
-      interaction.reply({
+      interaction.followUp({
         content: "Did not send :(",
         flags: MessageFlags.Ephemeral,
       });

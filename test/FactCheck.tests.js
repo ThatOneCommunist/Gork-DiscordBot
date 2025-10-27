@@ -1,4 +1,6 @@
-const { FactCheck } = require("../src/util/MessageComponents/FactCheck");
+const {
+  FactCheck,
+} = require("../src/util/MessageComponents/booleanChecks/FactCheck");
 const { expect } = require("chai");
 
 describe("FactCheck boolean function", function () {

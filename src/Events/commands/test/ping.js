@@ -7,7 +7,8 @@ module.exports = {
     .setDescription("Replies with Pong!"),
   async execute(interaction) {
     try {
-      await interaction.reply(`Pong! ${client.ws.ping}ms`);
+      await interaction.deferReply();
+      await interaction.followUp(`Pong! ${client.ws.ping}ms`);
     } catch (error) {
       console.error(`Something went wrong in ping: ${error}`);
     }

@@ -36,9 +36,6 @@ client.on(Events.MessageCreate, async (msg) => {
 });
 client.on(Events.InteractionCreate, async (interaction) => {
   CommandDeploy(interaction);
-  if (interaction.isChatInputCommand()) {
-    console.log(`${interaction.user.tag} used ${interaction.commandName} `);
-  }
 });
 
 client.on(Events.VoiceStateUpdate, async (oldState, newState) => {

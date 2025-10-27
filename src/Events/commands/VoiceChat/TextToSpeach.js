@@ -60,12 +60,18 @@ module.exports = {
     ),
   // When the command is called
   async execute(interaction) {
+    await interaction.deferReply({ flags: MessageFlags.Ephemeral });
     if (AudioPlayerStatus.Playing == player.state.status) {
-      interaction.reply({
+      interaction.followUp({
         content: `already playing a message`,
         flags: MessageFlags.Ephemeral,
       });
       return;
+    } else {
+      interaction.followUp({
+        content: `playing message`,
+        flags: MessageFlags.Ephemeral,
+      });
     }
 
     const connection = joinVoiceChannel({

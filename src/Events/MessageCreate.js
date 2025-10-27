@@ -1,4 +1,6 @@
-const { FactCheck } = require("../util/MessageComponents/FactCheck.js");
+const {
+  FactCheck,
+} = require("../util/MessageComponents/booleanChecks/FactCheck.js");
 const { client } = require("../util/client.js");
 const {
   JAX_ID,
@@ -10,8 +12,15 @@ const { generalPrompt } = require("./prompts/generalPrompts.js");
 const { questionprompts } = require("./prompts/questionPrompts.js");
 const { specialPrompts, triggers } = require("./prompts/specialPrompts.js");
 const { Wordle } = require("../util/MessageComponents/Wordle.js");
-const { GorkMisspell } = require("../util/MessageComponents/GorkMisspell.js");
-const { CensorCheck } = require("../util/MessageComponents/CensorCheck.js");
+const {
+  GorkMisspell,
+} = require("../util/MessageComponents/booleanChecks/GorkMisspell.js");
+const {
+  CensorCheck,
+} = require("../util/MessageComponents/booleanChecks/CensorCheck.js");
+const {
+  GeneralCheck,
+} = require("../util/MessageComponents/booleanChecks/GeneralCheck.js");
 
 var jaxcount = 1;
 
@@ -46,7 +55,7 @@ async function MessageCreate(msg) {
         msg.reply(Wordle(wordInt.replace(client.user.id, ""), userId)); // Removes Gorks ID
         return;
       // Have @GORK above this case
-      case msg.content.includes(botId):
+      case GeneralCheck(cleanMessage, botId):
         msg.reply(
           generalPrompt[getRandomIntInclusive(generalPrompt.length - 1)]
         );
@@ -57,17 +66,13 @@ async function MessageCreate(msg) {
         msg.react("😡");
         return;
       // Special Case
-      default:
-        if (!msg.author.id.includes(client.user.id)) {
-          let prompt = SpecialCaseSearch(
-            triggers,
-            specialPrompts,
-            cleanMessage
-          );
-          if (prompt) {
-            msg.reply(prompt);
-          }
+      case !msg.author.id.includes(client.user.id):
+        let prompt = SpecialCaseSearch(triggers, specialPrompts, cleanMessage);
+        if (prompt) {
+          msg.reply(prompt);
         }
+        return;
+      default:
         return;
     }
   } catch (error) {

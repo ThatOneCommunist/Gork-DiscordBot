@@ -16,7 +16,8 @@ module.exports = {
     ),
   async execute(interaction) {
     try {
-      await interaction.reply(
+      await interaction.deferReply();
+      await interaction.followUp(
         `Out of ${interaction.options.getInteger("number")} you got a ${
           diceoptions[
             getRandomIntInclusive(interaction.options.getInteger("number") - 1)

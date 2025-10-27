@@ -8,13 +8,14 @@ module.exports = {
     .setDescription("just spam it"),
   async execute(interaction) {
     try {
+      await interaction.deferReply({ flags: MessageFlags.Ephemeral });
       await client.users.send(JAX_ID, JAX_MESSAGE);
-      await interaction.reply({
+      await interaction.followUp({
         content: `something happened`,
         flags: MessageFlags.Ephemeral,
       });
     } catch (error) {
-      await interaction.reply({
+      await interaction.followUp({
         content: "Did not send :(",
         flags: MessageFlags.Ephemeral,
       });
