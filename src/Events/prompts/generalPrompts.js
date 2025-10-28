@@ -450,4 +450,6 @@ module.exports.generalPrompt = [
   "🚠🚡👲",
 
   "Time out <@626531197484269578> for 5 mins",
+
+  "Kill <@717838749441982515> https://tenor.com/view/patriotism-george-washington-gun-guns-gif-3145814110151620733",
 ];

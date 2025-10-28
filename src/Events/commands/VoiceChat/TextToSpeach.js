@@ -6,7 +6,6 @@ const {
   entersState,
 } = require("@discordjs/voice");
 const { joinVoiceChannel } = require("@discordjs/voice");
-const { join } = require("path");
 const path = require("path");
 const tts = require("google-tts-api");
 const axios = require("axios");
@@ -67,13 +66,11 @@ module.exports = {
         flags: MessageFlags.Ephemeral,
       });
       return;
-    } else {
-      interaction.followUp({
-        content: `playing message`,
-        flags: MessageFlags.Ephemeral,
-      });
     }
-
+    await interaction.followUp({
+      content: `playing message`,
+      flags: MessageFlags.Ephemeral,
+    });
     const connection = joinVoiceChannel({
       channelId: interaction.member.voice.channel.id,
       guildId: interaction.guild.id,
@@ -84,12 +81,12 @@ module.exports = {
       interaction.options.getString("language")
     );
     // Subscribe the connection to the audio player (will play audio on the voice connection)
-    const subscription = connection.subscribe(player);
+    const subscription = await connection.subscribe(player);
 
     // subscription could be undefined if the connection is destroyed!
     if (!subscription) {
       // Unsubscribe after 5 seconds (stop playing audio on the voice connection)
-      subscription.unsubscribe();
+      await subscription.unsubscribe();
     }
     await fs.readdir(filepath, async (err, files) => {
       if (err) throw err;
@@ -113,9 +110,10 @@ module.exports = {
           return;
         }
       }
+      // Does Not Work
       await setTimeout(2000);
-      player.stop();
-      connection.disconnect();
+      await player.stop();
+      await connection.destroy();
       return;
     });
   },

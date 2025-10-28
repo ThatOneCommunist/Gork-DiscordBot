@@ -1,5 +1,3 @@
-const { VoiceConnectionStatus } = require("@discordjs/voice");
-const { connection } = require("./TextToSpeach");
 const fs = require("fs");
 const path = require("path");
 const { player } = require("../../../util/player");
@@ -11,9 +9,11 @@ async function killVC() {
     if (err) throw err;
 
     for (const file of files) {
-      await fs.unlink(path.join(filepath, file), (err) => {
-        if (err) return;
-      });
+      if (!file.includes(".gitkeep")) {
+        await fs.unlink(path.join(filepath, file), (err) => {
+          if (err) return;
+        });
+      }
     }
   });
 }
