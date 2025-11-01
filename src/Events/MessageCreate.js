@@ -62,7 +62,9 @@ async function MessageCreate(msg) {
         return;
       // GORK MISPELL
       case GorkMisspell(cleanMessage):
-        msg.reply("SAY MY NAME CORRECTLY");
+        msg.reply(
+          "https://cdn.discordapp.com/attachments/1319845797713412159/1433298552733433938/image0.gif?ex=6904d78c&is=6903860c&hm=940686f2efd163fa1eeedcce6fa6ddefcb2740673200784438289ef2d5d042d3&"
+        );
         msg.react("😡");
         return;
       // Special Case

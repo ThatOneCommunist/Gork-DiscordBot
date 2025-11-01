@@ -1,1 +1,8 @@
-module.exports.censorList = ["job", "french", "british", "exercise"];
+module.exports.censorList = [
+  "job",
+  "french",
+  "british",
+  "exercise",
+  "women",
+  "female",
+];

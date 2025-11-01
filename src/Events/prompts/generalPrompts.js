@@ -452,4 +452,20 @@ module.exports.generalPrompt = [
   "Time out <@626531197484269578> for 5 mins",
 
   "Kill <@717838749441982515> https://tenor.com/view/patriotism-george-washington-gun-guns-gif-3145814110151620733",
+
+  "cannot send empty message.",
+
+  "*insert rude joke or sexual inuendo here*🍆🍆🍆👩‍🦯👩‍🦯👩‍🦯👩‍🦯👨‍🦯‍➡️👨‍🦯‍➡️👨‍🦯‍➡️🧑‍🦽🧑‍🦽🧑‍🦽<@746772138731765820>",
+
+  "tetnis more like tenis :ball: https://cdn.discordapp.com/attachments/1383809591204384890/1433238922116202507/Screenshot_20251029_183517_TikTok.jpg?ex=6903f743&is=6902a5c3&hm=f02e3eacb34f1646a411997f0fc95468fdf8d9b853ea102c16d66ae37b51a050&",
+
+  "The only segregation I shed a tear for https://cdn.discordapp.com/attachments/1121598920548683888/1433575430090395648/IMG_0033.png?ex=690530a9&is=6903df29&hm=b08bb5a98ae751168ca41a242ac72c616618669484a13e15950e43e5fbda568b&",
+
+  "can someone get her number please :pleading_face: https://tenor.com/view/robot-gif-26248020",
+
+  "<@746772138731765820>hop on vscode",
+
+  "shut up and get me another beer",
+
+  "Sit down Mr. Hands, they call me The Maestro of Phalanges",
 ];

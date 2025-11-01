@@ -56,4 +56,6 @@ module.exports.questionprompts = [
   "https://media.discordapp.net/attachments/840047144634286100/1191299090189918239/77624D8D-6A1F-44BF-A686-8D9E3C45C7E3.gif?ex=689465bc&is=6893143c&hm=5996263f53b4cb0f8559b9b32fe089299f2254337af90063ce3829f0962167c1&",
 
   "how bout you answer that one yourself bub",
+
+  "I've got a better question than the one you asked me. \nWhat is happen when you do addy and tylenol when you preggo 🫃?",
 ];
