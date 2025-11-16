@@ -49,6 +49,8 @@ module.exports.questionprompts = [
 
   "这不是真的",
 
+  "不知道",
+
   "eh nothing matter :sad:",
 
   "Whatever <@968257748678623312> says is right",
@@ -57,5 +59,5 @@ module.exports.questionprompts = [
 
   "how bout you answer that one yourself bub",
 
-  "I've got a better question than the one you asked me. \nWhat is happen when you do addy and tylenol when you preggo 🫃?",
+  "I've got a better question than the one you asked me. \nWhat is happen when you pop a addy and tylenol when you preggo 🫃?",
 ];

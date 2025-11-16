@@ -1,6 +1,6 @@
 const fs = require("fs");
 const path = require("path");
-const { player } = require("../../../util/player");
+const { player } = require("./player");
 
 async function killVC() {
   player.stop();

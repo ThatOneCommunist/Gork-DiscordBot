@@ -82,6 +82,8 @@ module.exports.specialPrompts = [
   "I Did Not Have Sexual Relations With That Woman",
   // Evan Hate
   "https://tenor.com/view/hate-hate-drive-activated-activate-mad-hater-gif-23479256",
+  // Brazil
+  "https://cdn.discordapp.com/attachments/1394019812015079495/1438374710411923487/IMG_3403.png?ex=6916a656&is=691554d6&hm=9986c81b45dc2cf9648960193764bb8f2b8b2612bffdc48f4bcb5a95da101cfe&",
 ];
 
 module.exports.triggers = [
@@ -106,4 +108,5 @@ module.exports.triggers = [
   "jovial merryment",
   "bill clinton",
   "hate evan",
+  "brazil",
 ];

@@ -5,4 +5,5 @@ module.exports.censorList = [
   "exercise",
   "women",
   "female",
+  "shower",
 ];
