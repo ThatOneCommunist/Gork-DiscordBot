@@ -113,7 +113,8 @@ module.exports = {
       // Does Not Work
       await setTimeout(2000);
       await player.stop();
-      await connection.destroy();
+      while(!connection.disconnect()){}
+      connection.destroy()
       return;
     });
   },
