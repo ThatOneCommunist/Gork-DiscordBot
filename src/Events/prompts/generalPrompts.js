@@ -244,7 +244,7 @@ module.exports.generalPrompt = [
 
   "I be spitting facts fr :speaking_head: :100: :100::100::100::100::100::100::100:",
 
-  "I'm a big fan of Japanese vocoloids",
+  "I'm a big fan of Japanese vocaloids",
 
   "I love <@706997479819837452>",
 
