@@ -98,4 +98,5 @@ module.exports.HMOList = [
   "Horse Corpse",
   "Jack from the hit story jack and jill",
   "Wolf (grandma alt)",
+  "Boo from Monsters inc (movie was made in 2001 so its ok now) - The Twink gave me the ok",
 ];

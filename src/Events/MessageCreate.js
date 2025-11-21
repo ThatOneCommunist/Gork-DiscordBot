@@ -8,9 +8,14 @@ const {
   ORANGE_TXTCHANEL_ID,
 } = require("../util/constants.js");
 const { getRandomIntInclusive } = require("../util/randomValues.js");
-const { generalPrompt } = require("./prompts/generalPrompts.js");
-const { questionprompts } = require("./prompts/questionPrompts.js");
-const { specialPrompts, triggers } = require("./prompts/specialPrompts.js");
+const { generalPrompt } = require("../util/Content/prompts/generalPrompts.js");
+const {
+  questionprompts,
+} = require("../util/Content/prompts/questionPrompts.js");
+const {
+  specialPrompts,
+  triggers,
+} = require("../util/Content/prompts/specialPrompts.js");
 const { Wordle } = require("../util/MessageComponents/Wordle.js");
 const {
   GorkMisspell,
