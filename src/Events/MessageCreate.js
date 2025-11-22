@@ -10,6 +10,7 @@ const {
 const { getRandomIntInclusive } = require("../util/randomValues.js");
 const {
   generalPrompt,
+  generalPrompts,
 } = require("../util/MessageComponents/Content/prompts/generalPrompts.js");
 const {
   questionprompts,
@@ -28,6 +29,7 @@ const {
 const {
   GeneralCheck,
 } = require("../util/MessageComponents/booleanChecks/GeneralCheck.js");
+const { CreateFile } = require("../util/MessageComponents/CreateFile.js");
 
 var jaxcount = 1;
 
@@ -64,14 +66,12 @@ async function MessageCreate(msg) {
       // Have @GORK above this case
       case GeneralCheck(cleanMessage, botId):
         msg.reply(
-          generalPrompt[getRandomIntInclusive(generalPrompt.length - 1)]
+          generalPrompts[getRandomIntInclusive(generalPrompts.length - 1)]
         );
         return;
       // GORK MISPELL
       case GorkMisspell(cleanMessage):
-        msg.reply(
-          "https://cdn.discordapp.com/attachments/1319845797713412159/1433298552733433938/image0.gif?ex=6904d78c&is=6903860c&hm=940686f2efd163fa1eeedcce6fa6ddefcb2740673200784438289ef2d5d042d3&"
-        );
+        msg.reply({ files: [CreateFile("PromptFiles", "SayMyName.gif")] });
         msg.react("😡");
         return;
       // Special Case
@@ -117,11 +117,6 @@ function CensorDelete(msg) {
   return;
 }
 
-// Add more cleans
-function CleanMessage(msg) {
-  var cleanMessage = msg.content.toLowerCase();
-  return cleanMessage.replace(/['-_]/g, "");
-}
 // Not important enough to require any updates
 function SpecialRequest(msg) {
   if (

@@ -1,3 +1,5 @@
+const { CreateFile } = require("../../CreateFile");
+
 module.exports.specialPrompts = [
   // luthen
   "Calm. Kindness. Kinship. Love. I’ve given up all chance at inner peace. I’ve made my mind a sunless space. I share my dreams with ghosts. I wake up every day to an equation I wrote 15 years ago from which there’s only one conclusion, I’m damned for what I do. My anger, my ego, my unwillingness to yield, my eagerness to fight, they’ve set me on a path from which there is no escape. I yearned to be a savior against injustice without contemplating the cost and by the time I looked down there was no longer any ground beneath my feet. What is my sacrifice? I’m condemned to use the tools of my enemy to defeat them. I burn my decency for someone else’s future. I burn my life to make a sunrise that I know I’ll never see. And the ego that started this fight will never have a mirror or an audience or the light of gratitude. So what do I sacrifice? Everything! You’ll stay with me, Lonni. I need all the heroes I can get.",
@@ -47,17 +49,21 @@ module.exports.specialPrompts = [
     "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣾⣿⣿⣿⣻⡇⠀⠀⠈⠋⠉\n" +
     "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⣿⣿⣟⠟⠀",
   // Larry
-  "Hey I know a funny man named larry https://www.youtube.com/watch?v=qRrD_SiHRYM",
+  {
+    content: "Hey I know a funny man named larry",
+    files: [CreateFile("PromptFiles", "larry.mp4")],
+  },
   // JFK
   "Wasn't that the guy they shot for plot reasons https://www.youtube.com/watch?v=v2DxBsWk3w8",
   // MASSIVE
-  "you know what else is massive https://tenor.com/view/ninja-fortnite-reaction-ninja-low-taper-fade-gif-1784137995500051652",
+  {
+    content: "you know what else is massive",
+    files: [CreateFile("PromptFiles", "massive.gif")],
+  },
   // Gabe FR
   "ON MY MOMMA THATS TRUE :100:",
   // Liberal
   "DID I HEAR A SOY REFERENCE????????",
-  // Royce Dupont
-  "I love Royce https://tenor.com/view/royce-royce-dupont-dupont-royce-du-pont-gif-3755189119331543741",
   //HomeLander drinking milk
   "https://tenor.com/view/homelander-milk-antony-starr-gif-2606354610122003363",
   // Vapeoreon
@@ -67,9 +73,15 @@ module.exports.specialPrompts = [
   // Dave and Busters
   "https://cdn.discordapp.com/attachments/986773996014043147/989560481071124580/trim.F93CB43A-24C8-443E-B89F-583E55D93650.mov?ex=6883aa03&is=68825883&hm=cb62003f62c6c7bd907ddf027afa5a44c70f4df213c15a42ab6549472894a1c0&",
   // Among Us
-  "Sussy Baka https://tenor.com/view/inspector-lunge-among-us-monster-naoki-urasawa-heinrich-lunge-gif-16546145040661683494",
+  {
+    content: "Sussy Baka",
+    files: [CreateFile("PromptFiles", "hella-sussy.gif")],
+  },
   // Stanford Pines
-  "BUTTER https://tenor.com/view/stan-grunkle-stan-gravity-falls-lobotomy-fire-optic-cable-core-gif-11233473407792412738",
+  {
+    content: "BUTTER",
+    files: [CreateFile("PromptFiles", "stan-grunkle-stan.gif")],
+  },
   // Power Outage
   "HAHAHAHAHAHAHAHA POOOOOOR 😂🫵",
   // Conquest
@@ -95,7 +107,6 @@ module.exports.triggers = [
   "massive",
   "gabe is a furry",
   "liberal",
-  "royce dupont",
   "kinky",
   "vaporeon",
   "angry bird",
