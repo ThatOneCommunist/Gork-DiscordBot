@@ -3,10 +3,10 @@ const { client } = require("./util/client.js");
 const { Events } = require("discord.js");
 const { MessageReaction } = require("./Events/Reaction.js");
 const { Ready } = require("./Events/Ready.js");
-const { MessageCreate, SpecialRequest } = require("./Events/MessageCreate.js");
+const { MessageCreate } = require("./Events/MessageCreate.js");
 const { CommandDeploy } = require("./Events/Command.js");
-const { killVC } = require("./Events/commands/VoiceChat/killVC.js");
 const { DM_USER, DM_CHANNEL_ID } = require("./util/constants.js");
+const { killVC } = require("./util/killVC.js");
 
 global.self = global;
 Ready();

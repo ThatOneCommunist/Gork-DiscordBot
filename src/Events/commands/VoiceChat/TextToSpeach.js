@@ -107,15 +107,12 @@ module.exports = {
           await setTimeout(parseInt(durations) * 1000);
         } catch (err) {
           console.error(`Something went wrong in Voicechat: ${err}`);
-          return;
+          //return;
         }
+        await setTimeout(1500);
+        connection.disconnect();
+        console.log("Disconected from vc");
       }
-      // Does Not Work
-      await setTimeout(2000);
-      await player.stop();
-      while(!connection.disconnect()){}
-      connection.destroy()
-      return;
     });
   },
 };

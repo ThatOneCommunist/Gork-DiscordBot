@@ -1,7 +1,7 @@
 const { SlashCommandBuilder, AttachmentBuilder } = require("discord.js");
 const { getRandomIntInclusive } = require("../../../util/randomValues");
 const fs = require("node:fs");
-const files = fs.readdirSync("./src/util/trilobite");
+const files = fs.readdirSync("./src/util/MessageComponents/Content/trilobite");
 module.exports = {
   data: new SlashCommandBuilder()
     .setName("trilobite")
@@ -11,7 +11,9 @@ module.exports = {
       await interaction.deferReply();
       var number = getRandomIntInclusive(files.length);
       var file = new AttachmentBuilder(
-        fs.readFileSync(`./src/util/trilobite/Trilobite${number}.webp`),
+        fs.readFileSync(
+          `./src/util/MessageComponents/Content/trilobite/Trilobite${number}.webp`
+        ),
         { name: `Trilobite${number}.webp` }
       );
 

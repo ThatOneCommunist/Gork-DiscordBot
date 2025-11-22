@@ -1,6 +1,9 @@
 const { SlashCommandBuilder, AttachmentBuilder } = require("discord.js");
 const { getRandomIntInclusive } = require("../../../util/randomValues");
-const { HMOList } = require("../../prompts/HMOList");
+const {
+  HMOList,
+} = require("../../../util/MessageComponents/Content/prompts/HMOList");
+
 module.exports = {
   data: new SlashCommandBuilder()
     .setName("here_me_out")

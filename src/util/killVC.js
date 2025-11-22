@@ -4,7 +4,7 @@ const { player } = require("./player");
 
 async function killVC() {
   player.stop();
-  const filepath = path.join(__dirname, "tts_mp3");
+  const filepath = path.join(__dirname, "../Events/commands/VoiceChat/tts_mp3");
   await fs.readdir(filepath, async (err, files) => {
     if (err) throw err;
 

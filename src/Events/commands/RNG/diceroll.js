@@ -1,6 +1,8 @@
 const { SlashCommandBuilder } = require("discord.js");
 const { getRandomIntInclusive } = require("../../../util/randomValues");
-const { diceoptions } = require("../../prompts/diceoptions");
+const {
+  diceoptions,
+} = require("../../../util/MessageComponents/Content/prompts/diceoptions");
 
 module.exports = {
   data: new SlashCommandBuilder()
