@@ -276,8 +276,8 @@ module.exports.generalPrompts = [
   },
   {
     content:
-      "https://cdn.discordapp.com/attachments/1319845797713412159/1441866889377747026/blueGun.gif?ex=69235aaf&is=6922092f&hm=3316992c4a8310a4005e8537830611687b7f3c68d7863d02a3d999d27d1d01a4&",
-    files: [CreateFile("PromptFiles", "redGun.gif")],
+      "https://cdn.discordapp.com/attachments/1319845797713412159/1443395622148374549/redGun.gif?ex=6928ea6d&is=692798ed&hm=2906d4989399228fa403f1e7225cc45a8df843120a1fd814ec7ea0d4f9b9cd8d&",
+    files: [CreateFile("PromptFiles", "blueGun.gif")],
   },
   {
     content: "bidon america",

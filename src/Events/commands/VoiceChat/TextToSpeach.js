@@ -109,11 +109,11 @@ module.exports = {
           console.error(`Something went wrong in Voicechat: ${err}`);
           //return;
         }
-        await setTimeout(1500);
-        connection.disconnect();
-        console.log("Disconected from vc");
       }
     });
+    await setTimeout(1500);
+    connection.disconnect();
+    console.log("Disconected from vc");
   },
 };
 // Function to convert text to speech and save as an audio file

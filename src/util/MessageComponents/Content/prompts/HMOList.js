@@ -81,6 +81,7 @@ module.exports.HMOList = [
   "King K Rool",
   "Minecraft Jenny Mod",
   "Jared From Subway",
+
   "Jimbo from Balatro",
   "Quincy From BTD6",
   "Papyrus' left leg",
@@ -99,4 +100,6 @@ module.exports.HMOList = [
   "Jack from the hit story jack and jill",
   "Wolf (grandma alt)",
   "Boo from Monsters inc (movie was made in 2001 so its ok now) - The Twink gave me the ok",
+  "God",
+  "Egyptian god Rah",
 ];
